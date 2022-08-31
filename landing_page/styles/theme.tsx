@@ -7,7 +7,6 @@ const config: ThemeConfig = {
   useSystemColorMode: false
 }
 
-
 export const theme = extendTheme({
   config,
   breakpoints: createBreakpoints({
@@ -37,7 +36,7 @@ export const theme = extendTheme({
         global: (props: StyleFunctionProps) => ({
                   body: {
                       textStyle: 'normal',
-                      color: mode('dark.200', 'light.100')(props)
+                      color: mode('dark.100','light.100')(props)
                   }
               })
           }

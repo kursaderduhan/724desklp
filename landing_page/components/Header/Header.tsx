@@ -8,7 +8,7 @@ import {
   Image,
   FlexProps
 } from '@chakra-ui/react'
-import {RiVipDiamondLine} from 'react-icons/ri'
+import { RiVipDiamondLine } from 'react-icons/ri'
 
 export const Header = () => {
   const { isOpen, onToggle } = useDisclosure()
@@ -19,13 +19,13 @@ export const Header = () => {
       color={'light.100'}
       minH={'60px'}
       py={{ base: 2 }}
-      px={10}
+      px={"120px"}
       align={'center'}
       w={'full'}
     >
       <Flex flex={{ base: 1 }} justifyContent={'space-between'}>
         <Image alt={'DeskIcon'} src={'/724DeskLogo.svg'} />
-        <Flex gap={35} alignItems={"center"} color={"white"}>
+        <Flex gap={35} alignItems={'center'} color={'white'}>
           {Links.map(link => (
             <NavLink key={link.key} name={link.name} link={link.link}>
               {link.name}
@@ -33,14 +33,15 @@ export const Header = () => {
           ))}
         </Flex>
         <Button
+          as={Button}
           size={'md'}
           fontSize={'md'}
           fontWeight={400}
           bg={'dark.200'}
-          _hover={{opacity:0.8}}
+          _hover={{ opacity: 0.8 }}
           color={'white'}
-          leftIcon={<RiVipDiamondLine/>}
         >
+          ELMAS EKLE//
           Join Whitelist
         </Button>
       </Flex>
