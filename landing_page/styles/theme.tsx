@@ -27,7 +27,8 @@ export const theme = extendTheme({
   },
   textStyles: {
     normal: {
-      fontSize: { base: 'xs', md: 'sm', lg: 'sm' }
+      fontSize: { base: 'xs', md: 'sm', lg: 'sm' },
+      alignSelf: "flex-start",
     }
   },
     components: {
