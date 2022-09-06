@@ -7,8 +7,8 @@ export const Home = () => {
       <HStack w={"full"} justifyContent={"space-between"}> 
         <VStack w={'full'} justifyContent={'flex-start'}>
           <VStack fontSize={60} justifyContent={"flex-start"} w={"full"}>
-            <Text w={"full"} color={"light.100"}>Problemlerinize</Text>
-            <HStack w={"full"}><Text color={"light.100"}> Anında </Text><Text color={"#F27C00"}>Çözüm</Text></HStack>
+            <Text w={"full"} color={"white"}>Problemlerinize</Text>
+            <HStack w={"full"}><Text color={"white"}> Anında </Text><Text color={"#F27C00"}>Çözüm</Text></HStack>
             <Text w={"full"} color={"#F27C00"}>Bulun</Text>
             </VStack>
           <Text w={450} alignSelf={"flex-start"}>
@@ -21,7 +21,7 @@ export const Home = () => {
             <Image src={'36dp.png'} w={10} h={10} alt={'play'} />
           </HStack>
         </VStack>
-        <Image src={'/235.png'} w={549} h={549} alt={'deskIcon'} />
+        <Image src={'/1.gif'} w={549} h={549} alt={'deskIcon'} />
       </HStack>
       <Image src={'/timer.png'} alt={'homeTable'} />
       <Image src={'/Rectangle.png'} w={'40px'} h={'70px'} alt={'ıcon'} />

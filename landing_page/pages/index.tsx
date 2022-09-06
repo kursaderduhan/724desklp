@@ -4,6 +4,8 @@ import Layout from '@components/Layout/Layout'
 import HomePage from '@components/HomePage/HomePage'
 import RoadMap from '@components/RoadMap/RoadMap'
 import Tokenomics from '@components/Tokenomics/Tokenomics'
+import Features from '@components/Features/Features'
+import DeskToken from '@components/DeskToken/DeskToken'
 
 const Home: NextPage = () => {
   return (
@@ -12,6 +14,8 @@ const Home: NextPage = () => {
         <HomePage />
         <Tokenomics/>
         <RoadMap />
+        <Features />
+        <DeskToken/>
       </Layout>
     </Flex>
   )

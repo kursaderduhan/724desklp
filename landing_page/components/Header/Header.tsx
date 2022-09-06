@@ -17,15 +17,15 @@ export const Header = () => {
     <Flex
       bg={'dark.100'}
       color={'light.100'}
-      minH={'60px'}
+      minH={'65px'}
       py={{ base: 2 }}
-      px={"120px"}
+      px={{md:"10",lg:'120px'}}
       align={'center'}
       w={'full'}
     >
       <Flex flex={{ base: 1 }} justifyContent={'space-between'}>
         <Image alt={'DeskIcon'} src={'/724DeskLogo.svg'} />
-        <Flex gap={35} alignItems={'center'} color={'white'}>
+        <Flex gap={35} alignItems={'center'} color={'white'} fontSize={{md:"sm", lg:"lg"}}>
           {Links.map(link => (
             <NavLink key={link.key} name={link.name} link={link.link}>
               {link.name}
@@ -40,8 +40,9 @@ export const Header = () => {
           bg={'dark.200'}
           _hover={{ opacity: 0.8 }}
           color={'white'}
+          gap={2}
         >
-          ELMAS EKLE//
+          <Image src={'diamonds.png'} alt={'diamonds'} w='6' h={'6'} />
           Join Whitelist
         </Button>
       </Flex>
