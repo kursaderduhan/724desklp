@@ -8,6 +8,7 @@ import Features from '@components/Features/Features'
 import DeskToken from '@components/DeskToken/DeskToken'
 import ResultService from '@components/ResultService/ResultService'
 import TokenCalendar from '@components/TokenCalendar/TokenCalendar'
+import Experts from '@components/Experts/Experts'
 
 const Home: NextPage = () => {
   return (
@@ -19,7 +20,8 @@ const Home: NextPage = () => {
         <Features />
         <DeskToken />
         <ResultService />
-        <TokenCalendar/>
+        <TokenCalendar />
+        <Experts/>
       </Layout>
     </Flex>
   )
