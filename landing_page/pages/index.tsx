@@ -9,6 +9,7 @@ import DeskToken from '@components/DeskToken/DeskToken'
 import ResultService from '@components/ResultService/ResultService'
 import TokenCalendar from '@components/TokenCalendar/TokenCalendar'
 import Experts from '@components/Experts/Experts'
+import Investor from '@components/Investor/Investor'
 
 const Home: NextPage = () => {
   return (
@@ -21,7 +22,8 @@ const Home: NextPage = () => {
         <DeskToken />
         <ResultService />
         <TokenCalendar />
-        <Experts/>
+        <Experts />
+        <Investor/>
       </Layout>
     </Flex>
   )
