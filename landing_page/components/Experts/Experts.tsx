@@ -1,4 +1,4 @@
-import React, { memo, ReactText } from 'react'
+import React, { memo, ReactNode, ReactText } from 'react'
 import {
   Flex,
   Text,
@@ -25,7 +25,6 @@ export const Experts = () => {
       <VStack
         bgImage={'/Mac.png'}
         bgSize={'cover'}
-        bgPos={'center'}
         w={'full'}
         color={'black'}
         h={1000}
@@ -43,8 +42,8 @@ export const Experts = () => {
           <br /> kalite puanlarına bağlı olarak platformumuzdan Desk Token elde
           ederek kendilerine ikinci bir gelir de sağlarlar.
         </Text>
-        <Button colorScheme={'orange'}>Nasıl Uzman Olurum</Button>
       </VStack>
+        <Button bg={'#F27C00'} color={"white"} _hover={{opacity:0.8}}>Nasıl Uzman Olurum?</Button>
       <VStack>
         <Text fontWeight={'bold'} fontSize={'3xl'} alignSelf={'flex-start'}>
           Team
@@ -66,7 +65,7 @@ export const Experts = () => {
           ))}
         </HStack>
       </VStack>
-      <VStack>
+      <VStack py={100}>
         <VStack w={'full'}>
           <Text fontWeight={'bold'} fontSize={'3xl'} alignSelf={'flex-start'}>
             Topluluk
@@ -76,8 +75,8 @@ export const Experts = () => {
             olun.
           </Text>
         </VStack>
-        <HStack gap={75} w={'full'}>
-          <HStack w={350} h={150} boxShadow={'base'} pt={25} px={5}>
+        <HStack gap={120} w={'full'}>
+          <HStack w={350} h={170} boxShadow={'base'} pt={25} px={5}>
             <Image
               src={'/telegram.png'}
               alt={'telegram'}
@@ -95,7 +94,7 @@ export const Experts = () => {
             </VStack>
           </HStack>
 
-          <HStack w={350} h={150} boxShadow={'base'} pt={25} px={5}>
+          <HStack w={350} h={170} boxShadow={'base'} pt={25} px={5}>
             <Image
               src={'/facebook-1.png'}
               alt={'facebook'}
@@ -112,7 +111,7 @@ export const Experts = () => {
             </VStack>
           </HStack>
 
-          <HStack w={350} h={150} boxShadow={'base'} pt={25} px={5}>
+          <HStack w={350} h={170} boxShadow={'base'} pt={25} px={5}>
             <Image
               src={'/discord.png'}
               alt={'discord'}
@@ -180,19 +179,19 @@ interface ProfileLinkProps extends FlexProps {
   name: string
   job: string
   link: string
-  children: ReactText
+  children: ReactNode
 }
 
 const ProfileContent = ({ children, ...rest }: ProfileLinkProps) => (
   <Center py={6}>
     <Box
-      maxW={'320px'}
-      w={350}
-      bg={useColorModeValue('white', 'gray.900')}
+      w={320}
       boxShadow={'2xl'}
       rounded={'lg'}
       p={6}
-      textAlign={'center'}
+      textAlign={'center'} color={"black"} transform={'auto'}
+      _hover={{ scale: '1.06', opacity: '0.7' }}
+
     >
       <Avatar
         size={'xl'}

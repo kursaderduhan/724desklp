@@ -14,17 +14,17 @@ import {
 } from '@chakra-ui/react'
 export const Footer = () => {
   return (
-    <Flex
+    <VStack
       w={'full'}
       h={'400px'}
       bg={'dark.100'}
       flexDirection={'column'}
-      pos='relative'
+      pos={"relative"}
     >
-      {/* <Box pos={"absolute"} justifyContent={"center"} display={"flex"} w={"full"}>
-        <Image src={'/footerLogo.png'} alt={'desk'} w={500}/>
-        </Box> */}
-      <HStack
+      <Box pos='absolute'>
+        <Image src={'/footerLogo.png'} alt={'desk'} w={400} h={400} />
+      </Box>
+      <Flex
         justifyContent={'space-evenly'}
         w={'full'}
         alignItems={'center'}
@@ -53,7 +53,7 @@ export const Footer = () => {
           </HStack>
           <Text w={'282px'}>@ Copyright. All rights reserved.</Text>
         </VStack>
-        <VStack color={'white'} w={'full'}>
+        <VStack color={'white'} w={'full'} >
           <Text w={220}>Content</Text>
           <Divider orientation='horizontal' w={220} />
 
@@ -74,9 +74,7 @@ export const Footer = () => {
           </HStack>
         </VStack>
         <VStack color={'white'} alignSelf={'center'} w={'full'}>
-          <Text w={220}>
-            Quick Links
-          </Text>
+          <Text w={220}>Quick Links</Text>
           <Divider orientation='horizontal' w={220} />
           <HStack gap={25} w={220}>
             <UnorderedList>
@@ -84,15 +82,15 @@ export const Footer = () => {
               <ListItem>Whitelisting Compaign</ListItem>
               <ListItem>Quick Links</ListItem>
               <ListItem>Community Channel</ListItem>
-              <ListItem>Application Dashboard</ListItem>
             </UnorderedList>
             <UnorderedList alignSelf={'flex-start'}>
+              <ListItem>Application Dashboard</ListItem>
               <ListItem>Support</ListItem>
             </UnorderedList>
           </HStack>
         </VStack>
-      </HStack>
-    </Flex>
+      </Flex>
+    </VStack>
   )
 }
 

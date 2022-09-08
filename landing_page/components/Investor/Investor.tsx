@@ -120,8 +120,9 @@ export const Investor = () => {
               //   value={content}
             ></Textarea>
           </Box>
-          <Button colorScheme={'orange'} w={'full'}>
+          <Button bg={'#F27C00'} w={'full'} color={"white"} _hover={{ opacity: 0.8 }} gap={2}>
             Gönder
+            <Image src={"/send.png"} alt={"send"} w={6} h={6} />
           </Button>
         </VStack>
       </Flex>

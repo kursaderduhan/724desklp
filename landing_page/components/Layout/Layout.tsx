@@ -21,7 +21,7 @@ export const Layout = ({ children }: { children: any }) => {
         top={0}
         // backdropFilter='blur(90px)' filter = 'grayscale(10%)'
         // backdropContrast='100%'
-        zIndex={1}
+        zIndex={4}
       >
         <Header />
       </Box>

@@ -15,7 +15,7 @@ import {
 
 export const TokenCalendar = () => {
   return (
-    <VStack bgImage={'/CalendarBg.png'} bgPos={'center'} bgSize={'cover'} px={150} py={50}>
+    <VStack bgImage={'/CalendarBg.png'} bgPos={'center'} bgSize={'cover'} px={150} py={50} zIndex={1}>
       <Text fontWeight={'bold'} fontSize={'3xl'} color={"white"} alignSelf={"flex-start"}>
         Serbest Kalma Çizelgesi
       </Text>
