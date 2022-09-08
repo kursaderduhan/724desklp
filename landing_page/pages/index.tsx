@@ -1,3 +1,4 @@
+import React from 'react'
 import { Flex } from '@chakra-ui/react'
 import { NextPage } from 'next'
 import Layout from '@components/Layout/Layout'
@@ -14,10 +15,10 @@ import Exploring from '@components/Exploring/Exploring'
 
 const Home: NextPage = () => {
   return (
-    <Flex>
-      <Layout>
+    <Layout>
+      <Flex flexDirection={'column'} w={'full'}>
         <HomePage />
-        <Tokenomics/>
+        <Tokenomics />
         <RoadMap />
         <Features />
         <DeskToken />
@@ -25,9 +26,9 @@ const Home: NextPage = () => {
         <TokenCalendar />
         <Experts />
         <Investor />
-        <Exploring/>
-      </Layout>
-    </Flex>
+        <Exploring />
+      </Flex>
+    </Layout>
   )
 }
 

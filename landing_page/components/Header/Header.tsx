@@ -1,31 +1,32 @@
-import React, { memo, ReactText } from 'react'
+import React, { memo, ReactNode } from 'react'
 import {
   Flex,
   Button,
   Link,
-  useBreakpointValue,
-  useDisclosure,
   Image,
-  FlexProps
+  FlexProps,
+  HStack,
+  Text
 } from '@chakra-ui/react'
-import { RiVipDiamondLine } from 'react-icons/ri'
 
 export const Header = () => {
-  const { isOpen, onToggle } = useDisclosure()
-
   return (
     <Flex
       bg={'dark.100'}
       color={'light.100'}
       minH={'65px'}
-      py={{ base: 2 }}
-      px={{md:"10",lg:'120px'}}
+      px={{ md: '50', lg: '120px' }}
       align={'center'}
-      w={'full'}
+      w={'100vw'}
     >
-      <Flex flex={{ base: 1 }} justifyContent={'space-between'}>
+      <Flex flex={{ base: 2 }} justifyContent={'space-between'} w={"full"}>
         <Image alt={'DeskIcon'} src={'/724DeskLogo.svg'} />
-        <Flex gap={35} alignItems={'center'} color={'white'} fontSize={{md:"sm", lg:"lg"}}>
+        <Flex
+          alignItems={'center'}
+          color={'white'}
+          fontSize={{ md: 'sm', lg: 'lg' }}
+          gap={{ base: 1, md: 5, lg: 15 }}
+        >
           {Links.map(link => (
             <NavLink key={link.key} name={link.name} link={link.link}>
               {link.name}
@@ -33,16 +34,20 @@ export const Header = () => {
           ))}
         </Flex>
         <Button
-          as={Button}
           size={'md'}
-          fontSize={'md'}
+          fontSize={{ base: 'sm', md: 'md' }}
           fontWeight={400}
           bg={'dark.200'}
           _hover={{ opacity: 0.8 }}
           color={'white'}
-          gap={2}
+          gap={1}
         >
-          <Image src={'diamonds.png'} alt={'diamonds'} w='6' h={'6'} />
+          <Image
+            src={'diamonds.png'}
+            alt={'diamonds'}
+            w={{ base: 4, md: 6 }}
+            h={{ base: 4, md: 6 }}
+          />
           Join Whitelist
         </Button>
       </Flex>
@@ -68,10 +73,12 @@ const Links: Array<LinkProps> = [
 
 interface LinkItemProps extends FlexProps {
   name: string
-  children: ReactText
+  children: ReactNode
   link: string
 }
 
 const NavLink = ({ children, ...rest }: LinkItemProps) => (
-  <Link href={rest.link}>{children}</Link>
+  <Text>
+    <Link href={rest.link}>{children}</Link>
+  </Text>
 )
