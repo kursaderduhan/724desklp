@@ -19,13 +19,12 @@ export const Header = () => {
       align={'center'}
       w={'100vw'}
     >
-      <Flex flex={{ base: 2 }} justifyContent={'space-between'} w={"full"}>
+      <Flex flex={{ base: 2 }} justifyContent={'space-between'} w={"full"} px={2}>
         <Image alt={'DeskIcon'} src={'/724DeskLogo.svg'} />
         <Flex
           alignItems={'center'}
-          color={'white'}
-          fontSize={{ md: 'sm', lg: 'lg' }}
-          gap={{ base: 1, md: 5, lg: 15 }}
+          color={'white'} w={"full"} justifyContent={"center"}
+          gap={{ base: 1, md: 5, xl: 55 }}
         >
           {Links.map(link => (
             <NavLink key={link.key} name={link.name} link={link.link}>
@@ -35,7 +34,7 @@ export const Header = () => {
         </Flex>
         <Button
           size={'md'}
-          fontSize={{ base: 'sm', md: 'md' }}
+          fontSize={{ base: 'xs', md: 'md' }}
           fontWeight={400}
           bg={'dark.200'}
           _hover={{ opacity: 0.8 }}
@@ -78,7 +77,7 @@ interface LinkItemProps extends FlexProps {
 }
 
 const NavLink = ({ children, ...rest }: LinkItemProps) => (
-  <Text>
+  <Text fontSize={{base:"xs",md:"md", xl:"md"}} >
     <Link href={rest.link}>{children}</Link>
   </Text>
 )

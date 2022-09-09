@@ -27,7 +27,7 @@ export const Experts = () => {
         bgSize={'cover'}
         w={'full'}
         color={'black'}
-        h={1000}
+        h={1100} pt={50}
       >
         <Text fontWeight={'bold'} fontSize={'3xl'}>
           Uzmanlar
@@ -136,7 +136,7 @@ export const Experts = () => {
 export default memo(Experts)
 
 interface ProfileProps<> {
-  ımage?: string
+  ımage: string
   name: string
   job: string
   link: string

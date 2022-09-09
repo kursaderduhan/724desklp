@@ -81,14 +81,14 @@ export const Investor = () => {
           <HStack>
             <Image src={'/sms-tracking.png'} alt={'sms'} w={10} h={10} />
             <VStack>
-              <Text>Telefon</Text>
+              <Text alignSelf={"flex-start"}>Telefon</Text>
               <Text>+1 530 535 8035</Text>
             </VStack>
           </HStack>
           <HStack>
             <Image src={'/call-calling.png'} alt={'call'} w={10} h={10} />
             <VStack>
-              <Text>E-Posta</Text>
+              <Text alignSelf={"flex-start"}>E-Posta</Text>
               <Text>invesment@724desk.com</Text>
             </VStack>
           </HStack>
@@ -102,8 +102,8 @@ export const Investor = () => {
             <FormLabel htmlFor='username'>Ad Soyad</FormLabel>
             <Input placeholder='Ad Soyad' type={'text'} />
           </Box>
-          <Box>
-            <FormLabel htmlFor='e-posta'>E-Posta</FormLabel>
+          <Box alignItems={"flex-start"}>
+            <FormLabel htmlFor='e-posta' >E-Posta</FormLabel>
             <Input placeholder='invesment@724desk.com' type={'email'} />
           </Box>
           <Box>
