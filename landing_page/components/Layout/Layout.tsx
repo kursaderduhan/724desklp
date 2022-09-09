@@ -28,7 +28,8 @@ export const Layout = ({ children }: { children: any }) => {
       <Box w={'full'} h={'full'}>
         {children}
       </Box>
-      <Box w={'full'} h={'full'}>
+      <Box w={'full'} h={'full'} overflow={'visible'} bottom={0}
+          zIndex={1}>
         <Footer />
       </Box>
     </VStack>

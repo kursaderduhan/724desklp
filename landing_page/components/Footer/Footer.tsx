@@ -21,8 +21,8 @@ export const Footer = () => {
       flexDirection={'column'}
       pos={"relative"}
     >
-      <Box pos='absolute'>
-        <Image src={'/footerLogo.png'} alt={'desk'} w={400} h={400} />
+      <Box pos='absolute' h={"full"} w={"full"} justifyContent={"center"} bottom={260} pl={420} >
+        <Image src={'/footerLogo.png'} alt={'desk'} w={600} h={500} />
       </Box>
       <Flex
         justifyContent={'space-evenly'}
