@@ -13,9 +13,9 @@ import React, { memo } from 'react'
 
 export const ResultService = () => {
   return (
-    <VStack w={'full'}>
+    <VStack w={'full'} pt={100}>
       <HStack w={'full'} display={'flex'}>
-        <VStack pt={75} pl={220} alignItems={'flex-start'}>
+        <VStack pt={75} pl={320} alignItems={'flex-start'}>
           <Text fontWeight={'bold'} fontSize={'5xl'}>
             Çözüme anında ulaş
           </Text>
@@ -47,12 +47,12 @@ export const ResultService = () => {
           <Image
             src={'/resultImage.png'}
             alt={'resultImage'}
-            w={400}
-            mt={100}
+            w={600}
+            mt={200}
           />
         </Box>
       </HStack>
-      <HStack gap={15} w={'full'}>
+      <HStack gap={15} w={'full'} pt={150}>
         <Flex pos={'absolute'} w={850} h={800} justifyContent={'flex-start'}>
           <Image src={'/Ellipse-1.png'} alt={'font'} />
         </Flex>
@@ -110,7 +110,7 @@ export const ResultService = () => {
           </VStack>
         </HStack>
       </HStack>
-      <VStack pos={'relative'} py={125}>
+      <VStack pos={'relative'} pt={150} pb={100}>
         <Flex
           pos={'absolute'}
           w={900}

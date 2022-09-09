@@ -5,10 +5,10 @@ export const DeskToken = () => {
   return (
     <VStack bgImage={"/869.png"} py={50} gap={250}>
       <HStack pos={"relative"} justifyContent={"flex-end"} w={"full"}  display={"flex"}>
-        <Flex pos={"absolute"} w={"full"} >
+        <Flex pos={"absolute"} w={"full"} pl={150}>
           <Image src={'/2.gif'} alt={'2'} />
           </Flex>
-        <VStack color={"white"} pr={250}>
+        <VStack color={"white"} pr={400}>
           <Text fontWeight={'bold'} fontSize={"4xl"} alignSelf={"flex-start"}>Desk Token Nedir?</Text>
           <Text>
             Desk Token, yatırımcılarımızdan uzmanlarımıza, teknik ekibimizden{' '}
