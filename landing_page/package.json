@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "build":"next build",
+    "start":"next start",
+    "lint": "next lint",
+    "test": "jest --watch"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.9",

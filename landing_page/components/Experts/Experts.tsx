@@ -135,7 +135,7 @@ export const Experts = () => {
 
 export default memo(Experts)
 
-interface ProfileProps<> {
+interface ProfileProps {
   ımage: string
   name: string
   job: string

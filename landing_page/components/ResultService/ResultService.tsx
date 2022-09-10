@@ -15,7 +15,7 @@ export const ResultService = () => {
   return (
     <VStack w={'full'} pt={100}>
       <HStack w={'full'} display={'flex'}>
-        <VStack pt={75} pl={320} alignItems={'flex-start'}>
+        <VStack pt={75} pl={220} alignItems={'flex-start'}>
           <Text fontWeight={'bold'} fontSize={'5xl'}>
             Çözüme anında ulaş
           </Text>
@@ -51,6 +51,7 @@ export const ResultService = () => {
             mt={200}
           />
         </Box>
+        <Box w="250"></Box>
       </HStack>
       <HStack gap={15} w={'full'} pt={150}>
         <Flex pos={'absolute'} w={850} h={800} justifyContent={'flex-start'}>

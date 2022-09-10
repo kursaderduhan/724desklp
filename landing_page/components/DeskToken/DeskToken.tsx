@@ -1,14 +1,15 @@
-import { HStack, VStack, Image, Text, Flex } from '@chakra-ui/react'
+import { HStack, VStack, Image, Text, Flex,Box } from '@chakra-ui/react'
 import React, { memo } from 'react'
 
 export const DeskToken = () => {
   return (
     <VStack bgImage={"/869.png"} py={50} gap={250}>
-      <HStack pos={"relative"} justifyContent={"flex-end"} w={"full"}  display={"flex"}>
-        <Flex pos={"absolute"} w={"full"} pl={150}>
+      <HStack pos={"relative"} justifyContent={"space-around"} w={"full"}  display={"flex"}>
+        <Flex pos={"absolute"} w={"full"} >
           <Image src={'/2.gif'} alt={'2'} />
-          </Flex>
-        <VStack color={"white"} pr={400}>
+        </Flex>
+        <Box w="250"></Box>
+        <VStack color={"white"}>
           <Text fontWeight={'bold'} fontSize={"4xl"} alignSelf={"flex-start"}>Desk Token Nedir?</Text>
           <Text>
             Desk Token, yatırımcılarımızdan uzmanlarımıza, teknik ekibimizden{' '}

@@ -55,7 +55,7 @@ export const Header = () => {
 }
 export default memo(Header)
 
-interface LinkProps<> {
+interface LinkProps {
   name: string
   link: string
   key: string
