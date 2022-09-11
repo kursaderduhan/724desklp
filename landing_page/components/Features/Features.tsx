@@ -74,7 +74,7 @@ export const Features = () => {
               </Text>
             </VStack>
           </HStack>
-          <Image src={'/gelenKutusu.png'} alt={'gelenKutusu'} w={550} />
+          <Image src={'/GelenKutusu.png'} alt={'gelenKutusu'} w={550} />
         </HStack>
 
         <HStack gap={10} zIndex={1}>
@@ -162,7 +162,7 @@ export const Features = () => {
               </Text>
             </VStack>
           </HStack>
-          <Image src={'/kullanıcılar.png'} alt={'gelenKutusu'} w={550} />
+          <Image src={'/Kullanıcılar.png'} alt={'users'} w={550} />
         </HStack>
         <Image
           src={'/vertical-features.png'}
