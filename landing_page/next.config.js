@@ -1,8 +1,13 @@
-/**
- * @type {import('next').NextConfig}
- **/
-const nextConfig = {
-  /* config options here */
-}
+/** @type {import('next').NextConfig} */
+// const withPlugins = require('next-compose-plugins')
+// const withPwa = require('next-pwa')
+// const withReactSvg = require('next-react-svg')
+// const path = require('path')
 
-module.exports = nextConfig
+// const nextConfig = {
+
+// }
+  
+
+// module.exports = nextConfig
+
