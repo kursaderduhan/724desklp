@@ -15,8 +15,8 @@ export const ResultService = () => {
   return (
     <VStack w={'full'} pt={100}>
       <HStack w={'full'} display={'flex'}>
-        <VStack pt={75} pl={220} alignItems={'flex-start'}>
-          <Text fontWeight={'bold'} fontSize={'5xl'}>
+        <VStack pt={75} pl={{base:10,md:20,lg:50,xl:220}} alignItems={'flex-start'} textStyle={"normal"}>
+          <Text fontWeight={'bold'} textStyle={"headText"}>
             Çözüme anında ulaş
           </Text>
           <Text>
@@ -26,7 +26,7 @@ export const ResultService = () => {
             aktif olan uzmanlarımızdan profesyonel desteklerini alarak
             sorunlarının çözümlerine anında <br /> ulaşabilirler.
           </Text>
-          <Text fontWeight={'bold'} fontSize={'5xl'}>
+          <Text fontWeight={'bold'} textStyle={"headText"}>
             Kaliteli hizmet al
           </Text>
           <Text zIndex={1}>
@@ -47,7 +47,7 @@ export const ResultService = () => {
           <Image
             src={'/resultImage.png'}
             alt={'resultImage'}
-            w={600}
+            w={{base:250,md:350,lg:450,xl:600}}
             mt={200}
           />
         </Box>
@@ -77,11 +77,11 @@ export const ResultService = () => {
             />
           </Flex>
           <VStack alignItems={'flex-start'} zIndex={1}>
-            <VStack alignItems={'flex-start'}>
-              <Text fontWeight={'bold'} fontSize={'3xl'}>
+            <VStack alignItems={'flex-start'} textStyle={"normal"}>
+              <Text fontWeight={'bold'} textStyle={"headText"}>
                 Servislerimiz
               </Text>
-              <Text>Proje İçerisinde Sunduğumuz Servislerimiz</Text>
+              <Text color={"gray"}>Proje İçerisinde Sunduğumuz Servislerimiz</Text>
               <UnorderedList pl={5}>
                 <ListItem>Destek Hizmetlerimiz</ListItem>
                 <ListItem>Token Satıi Servisimiz</ListItem>
@@ -90,11 +90,11 @@ export const ResultService = () => {
                 <ListItem>Kredi Yönetim Çözümlerimiz</ListItem>
               </UnorderedList>
             </VStack>
-            <VStack alignItems={'flex-start'}>
-              <Text fontWeight={'bold'} fontSize={'3xl'}>
+            <VStack alignItems={'flex-start'} textStyle={"normal"}>
+              <Text fontWeight={'bold'} textStyle={"headText"}>
                 724Desk in Avantajları
               </Text>
-              <Text>Projemizin diğer projeleri</Text>
+              <Text color={"gray"}>Projemizin diğer projeleri</Text>
               <Text>
                 724Desk kendi alanında hizmet veren ilk projedir. Platformumuz
                 aracılığıyla, <br /> kripto alanında sunduğumuz destekler ile
@@ -111,18 +111,18 @@ export const ResultService = () => {
           </VStack>
         </HStack>
       </HStack>
-      <VStack pos={'relative'} pt={150} pb={100}>
+      <VStack pos={'relative'} pt={150} pb={100} px="2">
         <Flex
           pos={'absolute'}
-          w={900}
-          h={900}
+          w={{base:600,md:700,lg:800,xl:900}}
+          h={{base:600,md:700,lg:800,xl:900}}
           justifyContent={'flex-start'}
-          top={0}
+          top={0} mt={{base:100,md:100,lg:75,xl:50}}
         >
           <Image src={'/Ellipse-2.png'} alt={'font'} />
         </Flex>
-        <VStack zIndex={1}>
-        <Text fontWeight={'bold'} fontSize={'3xl'}>
+        <VStack zIndex={1} textStyle={"normal"}>
+        <Text fontWeight={'bold'} textStyle={"headText"}>
           Çözüm Kategorilerimiz
         </Text>
         <Text textAlign={'center'}>
@@ -135,7 +135,7 @@ export const ResultService = () => {
         </Text>
         <HStack>
           <VStack>
-            <Image src={'/kripto.png'} alt={'kripto'} w={24} h={24} />
+              <Image src={'/kripto.png'} alt={'kripto'} w={{base:12,md:14,lg:20,xl:24}} h={{base:12,md:14,lg:20,xl:24}} />
             <Text fontWeight={'bold'}>Kripto</Text>
             <Text textAlign={'center'}>
               Kripto kategorisinde bir çok alt başlıkta hizmet <br /> sunacağız.
@@ -146,7 +146,7 @@ export const ResultService = () => {
             </HStack>
           </VStack>
           <VStack>
-            <Image src={'/bulut.png'} alt={'bulut'} w={24} h={24} />
+            <Image src={'/bulut.png'} alt={'bulut'} w={{base:12,md:14,lg:20,xl:24}} h={{base:12,md:14,lg:20,xl:24}}  />
             <Text fontWeight={'bold'}>Bulut Servisler</Text>
             <Text textAlign={'center'}>
               Cloud Platformlar ve uygulamalar için destek <br /> sağlayacağız.
@@ -157,7 +157,7 @@ export const ResultService = () => {
             </HStack>
           </VStack>
           <VStack>
-            <Image src={'/web.png'} alt={'web'} w={24} h={24} />
+            <Image src={'/web.png'} alt={'web'} w={{base:12,md:14,lg:20,xl:24}} h={{base:12,md:14,lg:20,xl:24}}  />
             <Text fontWeight={'bold'}>Web Teknolojileri</Text>
             <Text textAlign={'center'}>
               Web üzerinde online olan tüm servisler için <br /> çözümler

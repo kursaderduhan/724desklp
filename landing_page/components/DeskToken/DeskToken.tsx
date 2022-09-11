@@ -3,16 +3,16 @@ import React, { memo } from 'react'
 
 export const DeskToken = () => {
   return (
-    <VStack bgImage={"/869.png"} py={50} gap={250}>
+    <VStack bgImage={"/869.png"} py={50} gap={{base:50,md:100,lg:150,xl:250}} px={5}>
       <HStack pos={"relative"} justifyContent={"space-around"} w={"full"}  display={"flex"}>
-        <Flex pos={"absolute"} w={"full"} >
-          <Image src={'/2.gif'} alt={'2'} />
+        <Flex pos={"absolute"} w={"full"} mr={{base:20,md:0,lg:0,xl:0}} ml={{base:0,md:0,lg:10,xl:350}}>
+          <Image src={'/2.gif'} alt={'2'} w={{base:300,md:350,lg:450,xl:550}}/>
         </Flex>
-        <Box w="250"></Box>
-        <VStack color={"white"}>
-          <Text fontWeight={'bold'} fontSize={"4xl"} alignSelf={"flex-start"}>Desk Token Nedir?</Text>
+        <Box w={{base:550,md:500,lg:400,xl:0}}></Box>
+        <VStack color={"white"} textStyle={"normal"}>
+          <Text fontWeight={'bold'} textStyle={"headText"} alignSelf={"flex-start"}>Desk Token Nedir?</Text>
           <Text>
-            Desk Token, yatırımcılarımızdan uzmanlarımıza, teknik ekibimizden{' '}
+            Desk Token, yatırımcılarımızdan uzmanlarımıza, teknik ekibimizden
             <br /> müşterilerimize kadar herkesin kazanacağı ve işlem
             yapabileceği projemiz <br /> kapsamında oluşturduğumuz
             tokenimizdir..
@@ -20,8 +20,8 @@ export const DeskToken = () => {
         </VStack>
       </HStack>
       <HStack>
-        <VStack color={"white"}>
-          <Text fontWeight={'bold'} fontSize={"4xl"} alignSelf={"flex-start"}>Desk Token Avantajları</Text>
+        <VStack color={"white"} textStyle={"normal"}>
+          <Text fontWeight={'bold'} textStyle={"headText"} alignSelf={"flex-start"}>Desk Token Avantajları</Text>
           <Text>
             Yetkinlikleri platformumuzca onaylanmış uzmanlarımızla birçok
             kategoride <br /> kullanıcıların sorunlarına kaliteli çözümler
@@ -31,7 +31,7 @@ export const DeskToken = () => {
             <br /> çözüme ulaştırıyor.
           </Text>
         </VStack>
-        <Image src={'/3.gif'} alt={'3'} />
+        <Image src={'/3.gif'} alt={'3'} w={{base:250,md:350,lg:450, xl:550}}/>
       </HStack>
     </VStack>
   )

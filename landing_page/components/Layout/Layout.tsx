@@ -25,7 +25,7 @@ export const Layout = ({ children }: { children: any }) => {
       >
         <Header />
       </Box>
-      <Box w={'full'} h={'full'}>
+      <Box w={'full'} h={'full'} overflow={'visible'} zIndex={1}>
         {children}
       </Box>
       <Box w={'full'} h={'full'} overflow={'visible'} bottom={0}

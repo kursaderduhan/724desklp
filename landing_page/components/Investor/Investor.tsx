@@ -21,11 +21,11 @@ export const Investor = () => {
       bgPos={'center'}
       color={'white'}
       w={'full'}
-      px={150}
+      px={50}
       py={20}
     >
-      <VStack alignItems={'flex-start'} alignSelf={'flex-start'}>
-        <Text fontWeight={'bold'} fontSize={'3xl'}>
+      <VStack alignItems={'flex-start'} alignSelf={'flex-start'} pl={{base:0,md:10,lg:20,xl:40}} textStyle={"normal"} color={"lightgray"}>
+        <Text fontWeight={'bold'} textStyle={"headText"} color={"white"}>
           Yatırımcılar İçin
         </Text>
         <Text>
@@ -37,18 +37,18 @@ export const Investor = () => {
           belirlenen takvimler kapsamında serbest <br /> bırakılacaktır.
         </Text>
       </VStack>
-      <HStack w={'full'} justifyContent={'space-around'}>
+      <Flex w={'full'} justifyContent={'space-around'} alignItems={"center"} flexDirection={{base:"column",md:"column",lg:"row",xl:"row"}}>
         <Image
           src={'/iPad-Pro.png'}
           alt={'ipad'}
-          w={750}
+          w={{base:400,md:500,lg:500,xl:750}}
           alignSelf={'flex-start'}
         />
-        <VStack alignItems={'flex-start'}>
-          <Text fontWeight={'bold'} fontSize={'2xl'}>
+        <VStack alignItems={'flex-start'} alignSelf={{base:"flex-start",md:"flex-start",lg:"center",xl:"center"}} color={"lightgray"} textStyle={"normal"}>
+          <Text fontWeight={'bold'} textStyle={"roadHead"} color={"white"}>
             Neden 724 Desk?
           </Text>
-          <UnorderedList>
+          <UnorderedList pl={5}>
             <ListItem>
               Erken dönem yatırımcılarımız, projemiz tokenine daha uygun
               maliyetlerle <br />
@@ -63,21 +63,21 @@ export const Investor = () => {
             </ListItem>
           </UnorderedList>
         </VStack>
-      </HStack>
+      </Flex>
       <Flex
-        gap={40}
+        gap={{base:2,md:5,lg:20,xl:40}}
         bgImage={'/ınv-bg.png'}
         bgPos={'center'}
         bgSize={'cover'}
         py={10}
-        px={20}
+        px={{base:2,md:5,lg:10,xl:20}}
         borderRadius={10}
       >
-        <VStack alignItems={'flex-start'}>
-          <Text fontWeight={'bold'} fontSize={'2xl'}>
+        <VStack alignItems={'flex-start'} textStyle={"normal"}>
+          <Text fontWeight={'bold'} textStyle={"roadHead"}>
             İletişim Bilgilerimiz
           </Text>
-          <Text>Bizimle İletişime Geçebileceğiniz Adresler.</Text>
+          <Text color={"gray"}>Bizimle İletişime Geçebileceğiniz Adresler.</Text>
           <HStack>
             <Image src={'/sms-tracking.png'} alt={'sms'} w={10} h={10} />
             <VStack>
@@ -93,8 +93,8 @@ export const Investor = () => {
             </VStack>
           </HStack>
         </VStack>
-        <VStack alignItems={'flex-start'}>
-          <Text fontWeight={'bold'} fontSize={'2xl'}>
+        <VStack alignItems={'flex-start'} textStyle={"normal"}>
+          <Text fontWeight={'bold'} textStyle={"roadHead"}>
             Bize Ulaşın
           </Text>
           <Text>Lütfen İletişim Bilgilerinizi Yazınız.</Text>
@@ -106,8 +106,8 @@ export const Investor = () => {
             <FormLabel htmlFor='e-posta' >E-Posta</FormLabel>
             <Input placeholder='invesment@724desk.com' type={'email'} />
           </Box>
-          <Box>
-            <FormLabel htmlFor=''>Açıklama</FormLabel>
+          <Box >
+            <FormLabel htmlFor=''><Text >Açıklama</Text></FormLabel>
             <Textarea
               placeholder='Merhaba, '
               size={'lg'}

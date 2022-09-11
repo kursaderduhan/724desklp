@@ -27,9 +27,9 @@ export const Experts = () => {
         bgSize={'cover'}
         w={'full'}
         color={'black'}
-        h={1100} pt={50}
+        h={1100} pt={50} textStyle={"normal"}
       >
-        <Text fontWeight={'bold'} fontSize={'3xl'}>
+        <Text fontWeight={'bold'} textStyle={"headText"}>
           Uzmanlar
         </Text>
         <Text textAlign={'center'}>
@@ -44,11 +44,11 @@ export const Experts = () => {
         </Text>
       </VStack>
         <Button bg={'#F27C00'} color={"white"} _hover={{opacity:0.8}}>Nasıl Uzman Olurum?</Button>
-      <VStack>
-        <Text fontWeight={'bold'} fontSize={'3xl'} alignSelf={'flex-start'}>
+      <VStack textStyle={"normal"}>
+        <Text fontWeight={'bold'} textStyle={"headText"} alignSelf={'flex-start'}>
           Team
         </Text>
-        <Text alignSelf={'flex-start'}>
+        <Text alignSelf={'flex-start'} color={"gray"}>
           Projemizin gelişim sürecinde aktif görev alan takım üyelerimiz.
         </Text>
         <HStack>
@@ -66,11 +66,11 @@ export const Experts = () => {
         </HStack>
       </VStack>
       <VStack py={100}>
-        <VStack w={'full'}>
-          <Text fontWeight={'bold'} fontSize={'3xl'} alignSelf={'flex-start'}>
+        <VStack w={'full'} textStyle={"normal"}>
+          <Text fontWeight={'bold'} textStyle={"headText"} alignSelf={'flex-start'}>
             Topluluk
           </Text>
-          <Text alignSelf={'flex-start'}>
+          <Text alignSelf={'flex-start'} color={"gray"}>
             Sosyal medya hesaplarımızı takip ederek son gelişmelerden haberdar
             olun.
           </Text>
@@ -190,7 +190,7 @@ const ProfileContent = ({ children, ...rest }: ProfileLinkProps) => (
       rounded={'lg'}
       p={6}
       textAlign={'center'} color={"black"} transform={'auto'}
-      _hover={{ scale: '1.06', opacity: '0.7' }}
+      _hover={{ scale: '1.04', opacity: '0.7',transition:"0.6s" }}
 
     >
       <Avatar
@@ -200,7 +200,7 @@ const ProfileContent = ({ children, ...rest }: ProfileLinkProps) => (
         mb={4}
         pos={'relative'}
       />
-      <Heading fontSize={'2xl'} fontFamily={'body'}>
+      <Heading fontSize={'2xl'} >
         {rest.name}
       </Heading>
       <Text fontWeight={600} color={'gray.500'} mb={4}>

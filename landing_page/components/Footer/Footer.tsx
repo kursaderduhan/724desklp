@@ -34,7 +34,7 @@ export const Footer = () => {
           color={'white'}
           gap={2}
           justifyContent={'space-evenly'}
-          w={'full'}
+          w={'full'} textStyle={"normal"}
         >
           <Box w={'282px'}>
             <Image src={'/724DeskLogo.png'} w={135} h={42} alt={'deskLogo'} />
@@ -53,7 +53,7 @@ export const Footer = () => {
           </HStack>
           <Text w={'282px'}>@ Copyright. All rights reserved.</Text>
         </VStack>
-        <VStack color={'white'} w={'full'} >
+        <VStack color={'white'} w={'full'} textStyle={"normal"}>
           <Text w={220}>Content</Text>
           <Divider orientation='horizontal' w={220} />
 
@@ -73,7 +73,7 @@ export const Footer = () => {
             </UnorderedList>
           </HStack>
         </VStack>
-        <VStack color={'white'} alignSelf={'center'} w={'full'}>
+        <VStack color={'white'} alignSelf={'center'} w={'full'} textStyle={"normal"}>
           <Text w={220}>Quick Links</Text>
           <Divider orientation='horizontal' w={220} />
           <HStack gap={25} w={220}>
