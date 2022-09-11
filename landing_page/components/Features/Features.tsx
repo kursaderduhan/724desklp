@@ -74,7 +74,7 @@ export const Features = () => {
               </Text>
             </VStack>
           </HStack>
-          <Image src={'/GelenKutusu.png'} alt={'gelenKutusu'} w={550} />
+          <Image src={'/gelenKutusu.png'} alt={'gelenKutusu'} w={550} />
         </HStack>
 
         <HStack gap={10} zIndex={1}>
@@ -107,7 +107,7 @@ export const Features = () => {
           </HStack>
         </HStack>
 
-        <HStack gap={10} zIndex={1}>
+        <HStack gap={10} zIndex={1} pr={10}>
           <Image src={'Proje.png'} alt={'takvim'} w={550} />
           <HStack alignItems={'flex-start'}>
             <Circle
@@ -123,7 +123,7 @@ export const Features = () => {
                 Üst düzey ajanda kontrolü ve denetim
               </Text>
               <Text>
-                Mevcut projelerin iş akış durumu, hangi uzmana atandığı, <br />{' '}
+                Mevcut projelerin iş akış durumu, hangi uzmana atandığı, <br />
                 uzmanın işe başlangıç tarihi kontrol edilip düzenlenebilir.
               </Text>
               <Text>
