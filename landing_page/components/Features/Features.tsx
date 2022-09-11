@@ -12,10 +12,10 @@ import {
 export const Features = () => {
   return (
     <VStack py={50}>
-      <Text color={'#F27C00'} fontSize={{ base: '2xl', md: '4xl', xl: '5xl' }}>
+      <Text color={'#F27C00'} textStyle={"headText"}>
         Gelişmiş Kullanıcı ve Uzman Yönetim Paneli
       </Text>
-      <Text fontSize={{ base: '1xl', md: '', xl: '' }} textAlign={'center'}>
+      <Text textStyle={"normal"} textAlign={'center'}>
         Kolay ve gelişmiş panelleriyle platformumuzda kullanıcıların aradığına
         ulaşması, destek alması <br /> ve uzmanların destek verme performansını
         en üst düzeye ulaşması için geliştirilmiştir.
@@ -23,8 +23,8 @@ export const Features = () => {
       <Image
         src={'/tablet-telefon.png'}
         alt={'tablet-telefon'}
-        w={750}
-        pt={50}
+        w={{base:400,md:550,lg:750,xl:950}}
+        pt={50} zIndex={1}
       />
       <VStack w={'full'} justifyContent={'space-around'} pos={'relative'} pb={150}>
         <Box
@@ -35,10 +35,10 @@ export const Features = () => {
           justifyContent={'flex-end'}
           display={'flex'}
         >
-          <Image src={'/Ellipse.png'} alt={'orange'} w={1000} h={900} />
+          <Image src={'/Ellipse.png'} alt={'orange'} w={{ base: 450, md: 600, lg: 750, xl: 1000 }} h={{base:500,md:650,lg:800,xl:900}} />
         </Box>
 
-        <HStack gap={10} zIndex={1}>
+        <HStack gap={{base:0,md:2,lg:6,xl:10}} zIndex={1}>
           <HStack>
             <Circle
               size={{ base: '30px', md: '40px', xl: '60px' }}
@@ -53,10 +53,10 @@ export const Features = () => {
                 h={{ base: '6', md: '8', xl: '12' }}
               />
             </Circle>
-            <VStack alignItems={'flex-start'}>
+            <VStack alignItems={'flex-start'} textStyle={"normal"}>
               <Text
                 fontWeight={'bold'}
-                fontSize={{ base: '1xl', md: '2xl', xl: '2xl' }}
+                textStyle={"featuresHead"}
               >
                 Tüm ticket ve her türlü mesajlaşmalar tek <br /> bir ekrandan
                 yapılabilmekte
@@ -74,22 +74,23 @@ export const Features = () => {
               </Text>
             </VStack>
           </HStack>
-          <Image src={'/GelenKutusu.png'} alt={'gelenKutusu'} w={550} />
+          <Image src={'/GelenKutusu.png'} alt={'gelenKutusu'} w={{base:250,md:350,lg:450, xl:550}} />
         </HStack>
 
-        <HStack gap={10} zIndex={1}>
-          <Image src={'Takvim.png'} alt={'takvim'} w={550} />
+        <HStack gap={{base:0,md:2,lg:6,xl:10}} zIndex={1}>
+          <Image src={'Takvim.png'} alt={'takvim'} w={{base:250,md:350,lg:450, xl:550}} />
           <HStack alignItems={'flex-start'}>
             <Circle
-              size={'60px'}
+              size={{ base: '30px', md: '40px', xl: '60px' }}
               bg={'white'}
               alignSelf={'flex-start'}
               boxShadow={'md'}
             >
-              <Image src={'calendar-edit.png'} alt={'calendar'} w={12} h={12} />
+              <Image src={'calendar-edit.png'} alt={'calendar'} w={{ base: '6', md: '8', xl: '12' }}
+                h={{ base: '6', md: '8', xl: '12' }} />
             </Circle>
-            <VStack alignSelf={'flex-start'} alignItems={'flex-start'}>
-              <Text fontWeight={'bold'} fontSize={'2xl'}>
+            <VStack alignSelf={'flex-start'} alignItems={'flex-start'} textStyle={"normal"}>
+              <Text fontWeight={'bold'} textStyle={"featuresHead"}>
                 Takvim özelliği kullanılarak kategori
                 <br /> yöneticileri hem kendilerinin hem de <br /> uzmanlarının
                 toplantı zamanlarını kontrol <br /> edebilir
@@ -107,19 +108,20 @@ export const Features = () => {
           </HStack>
         </HStack>
 
-        <HStack gap={10} zIndex={1} pr={10}>
-          <Image src={'Proje.png'} alt={'takvim'} w={550} />
+        <HStack gap={{base:0,md:2,lg:6,xl:10}} zIndex={1} pr={{md:2,lg:4,xl:4}}>
+          <Image src={'Proje.png'} alt={'takvim'} w={{base:250,md:350,lg:450, xl:550}} />
           <HStack alignItems={'flex-start'}>
             <Circle
-              size={'60px'}
+              size={{ base: '30px', md: '40px', xl: '60px' }}
               bg={'white'}
               alignSelf={'flex-start'}
               boxShadow={'md'}
             >
-              <Image src={'home-trend-up.png'} alt={'trend-up'} w={12} h={12} />
+              <Image src={'home-trend-up.png'} alt={'trend-up'} w={{ base: '6', md: '8', xl: '12' }}
+                h={{ base: '6', md: '8', xl: '12' }}/>
             </Circle>
-            <VStack alignSelf={'flex-start'} alignItems={'flex-start'}>
-              <Text fontWeight={'bold'} fontSize={'2xl'}>
+            <VStack alignSelf={'flex-start'} alignItems={'flex-start'} textStyle={"normal"}>
+              <Text fontWeight={'bold'} textStyle={"featuresHead"} >
                 Üst düzey ajanda kontrolü ve denetim
               </Text>
               <Text>
@@ -135,34 +137,35 @@ export const Features = () => {
             </VStack>
           </HStack>
         </HStack>
-        <HStack gap={10}>
+        <HStack gap={{base:0,md:2,lg:6,xl:10}}>
           <HStack alignItems={'flex-start'}>
             <Circle
-              size={'60px'}
+              size={{ base: '30px', md: '40px', xl: '60px' }}
               bg={'white'}
               alignSelf={'flex-start'}
               boxShadow={'md'}
             >
-              <Image src={'/profile-2user.png'} alt={'ticket'} w={12} h={12} />
+              <Image src={'/profile-2user.png'} alt={'ticket'} w={{ base: '6', md: '8', xl: '12' }}
+                h={{ base: '6', md: '8', xl: '12' }} />
             </Circle>
-            <VStack alignItems={'flex-start'}>
-              <Text fontWeight={'bold'} fontSize={'2xl'}>
+            <VStack alignItems={'flex-start'} textStyle={"normal"}>
+              <Text fontWeight={'bold'} textStyle={"featuresHead"}>
                 Müşteriler, çalışanlar veya diğer <br /> kullanıcılar
                 görüntülenebilir
               </Text>
               <Text>
-                Özenle hazırlanmış arayüz ile kullanıcıları görüntüleyip onaylı{' '}
+                Özenle hazırlanmış arayüz ile kullanıcıları görüntüleyip onaylı
                 <br /> iletişim adresleri, mesajları, gelir durumları ve daha
                 birçok <br /> kullanıcı bilgisine kolayca ulaşılabilir.
               </Text>
               <Text>
-                Bunlara ek olarak, kullanıcıların bugüne kadar açmış oldukları{' '}
+                Bunlara ek olarak, kullanıcıların bugüne kadar açmış oldukları
                 <br /> ticket sayısı gibi değişkenler görüntülenebilir ve işlem
                 yapılabilir.
               </Text>
             </VStack>
           </HStack>
-          <Image src={'/Kullanıcılar.png'} alt={'users'} w={550} />
+          <Image src={'/Kullanıcılar.png'} alt={'users'} w={{base:250,md:350,lg:450, xl:550}} />
         </HStack>
         <Image
           src={'/vertical-features.png'}
@@ -170,17 +173,18 @@ export const Features = () => {
           alignSelf={'center'}
           w={4}
         />
-        <VStack>
-          <Image src={'/Dashboard.png'} alt={'dashboard'} w={550} />
+        <VStack textStyle={"normal"}>
+          <Image src={'/Dashboard.png'} alt={'dashboard'} w={{base:250,md:350,lg:450, xl:550}} />
           <Circle
-            size={'60px'}
+            size={{ base: '30px', md: '40px', xl: '60px' }}
             alignSelf={'center'}
             boxShadow={'md'}
             bg={'white'}
           >
-            <Image src={'/monitor.png'} alt={'screen'} w={12} h={12} />
+            <Image src={'/monitor.png'} alt={'screen'} w={{ base: '6', md: '8', xl: '12' }}
+                h={{ base: '6', md: '8', xl: '12' }} />
           </Circle>
-          <Text fontWeight={'bold'} fontSize={'2xl'} textAlign={'center'}>
+          <Text fontWeight={'bold'} textStyle={"featuresHead"} textAlign={'center'}>
             Giriş seviyelerine göre düzenlenen <br /> arayüzler ile işlem
             tamamlama kolaylığı
           </Text>

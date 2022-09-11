@@ -20,7 +20,7 @@ export const Tokenomics = () => {
       <Text fontWeight={'bold'} fontSize={'4xl'}>
         Tokenomics
       </Text>
-      <Text textAlign={'center'}>
+      <Text textAlign={'center'} textStyle={"normal"}>
         Platformumuzun token ekonomisi, uzmanlarımızı, yatırımcılarımızı,
         müşterilerimizi desteklemek ve korumaya yönelik olarak <br />{' '}
         planlanmıştır. Tokenimize sahip olan kişilerin ellerindeki tokenlerin
@@ -46,14 +46,14 @@ export const Tokenomics = () => {
           </HStack>
           <HStack alignSelf={'flex-start'}>
             <Circle size='40px' bg='red' alignSelf={'flex-start'} />
-            <VStack alignItems={'flex-start'}>
+            <VStack alignItems={'flex-start'} textStyle={"normal"}>
               <Text color={'red'} fontWeight={'bold'}>
                 16%
               </Text>
-              <Text textStyle={'normal'} fontWeight={'bold'}>
+              <Text fontWeight={'bold'}>
                 Uzmanlar
               </Text>
-              <Text textStyle={'normal'}>
+              <Text >
                 Proje bünyesinde yer alacak uzmanlara gelir oluşturması <br />{' '}
                 için ayrılacak kısımdır.
               </Text>

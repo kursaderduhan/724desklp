@@ -21,7 +21,16 @@ export const theme = extendTheme({ breakpoints: createBreakpoints({
   },
   textStyles: {
     normal: {
-      fontSize: { base: 'xs', md: 'sm', lg: 'sm' },
+      fontSize: { base: 'xs', md: 'sm', lg:'md',xl:"md" },
+    },
+    roadHead: {
+      fontSize:{ base: 'sm', md: 'md', lg: 'lg', xl: "xl" }
+    },
+    headText: {
+      fontSize: {base: "2xl", md: "3xl", lg: "4xl", xl:"5xl"}
+    },
+    featuresHead: {
+      fontSize: { base: 'sm', md: 'md', lg: 'lg', xl: "xl" }
     }
   },    
   }

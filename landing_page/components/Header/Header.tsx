@@ -17,7 +17,7 @@ export const Header = () => {
       minH={'65px'}
       px={{ md: '50', lg: '120px' }}
       align={'center'}
-      w={'100vw'}
+      w={'full'}
     >
       <Flex flex={{ base: 2 }} justifyContent={'space-between'} w={"full"} px={2}>
         <Image alt={'DeskIcon'} src={'/724DeskLogo.svg'} />

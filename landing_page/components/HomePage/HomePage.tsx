@@ -29,7 +29,7 @@ export const Home = () => {
               Bulun!
             </Text>
           </VStack>
-          <Text alignSelf={'flex-start'} color={'white'} fontSize={{lg:"xl"}}> 
+          <Text alignSelf={'flex-start'} color={'white'} textStyle={"normal"}> 
             724Desk; yaşadığınız her türlü probleme günün her saatinde anlık
             olarak,<br/> farklı zaman dilimlerinde birçok dili konuşan, dünyanın en
             iyi uzmanlarından <br/> destek alabileceğiniz bir platformdur.
