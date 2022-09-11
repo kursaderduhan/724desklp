@@ -9,10 +9,10 @@ export const Home = () => {
       bgImage={'/homePageBg.png'}
       bgPos={'center'}
       bgSize={'cover'}
-      px={{ base: 1, md: 30, lg: 120 }} pb={5}
+      px={{ base: 1, md: 30, lg: 120 }} pb={10}
     >
-      <HStack w={'full'} justifyContent={'space-between'}>
-        <VStack w={'full'} justifyContent={'flex-start'}>
+      <HStack w={'full'} justifyContent={'space-between'} px={2}>
+        <VStack w={'full'} justifyContent={'flex-start'} gap={5}>
           <VStack
             fontSize={{ base: 30, md: 60 }}
             justifyContent={'flex-start'}
@@ -29,7 +29,7 @@ export const Home = () => {
               Bulun!
             </Text>
           </VStack>
-          <Text alignSelf={'flex-start'} color={'white'} fontSize={{lg:"2xl"}}> 
+          <Text alignSelf={'flex-start'} color={'white'} fontSize={{lg:"xl"}}> 
             724Desk; yaşadığınız her türlü probleme günün her saatinde anlık
             olarak,<br/> farklı zaman dilimlerinde birçok dili konuşan, dünyanın en
             iyi uzmanlarından <br/> destek alabileceğiniz bir platformdur.
