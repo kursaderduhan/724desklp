@@ -8,7 +8,10 @@ export const theme = extendTheme({ breakpoints: createBreakpoints({
     lg: '980px',
     xl: '1270px',
     myCustomOne: '1920px'
-  }),
+  }),fonts: {
+    heading: 'Poppins',
+    body: 'Poppins',
+  },
   colors: {
     dark: {
       100: "#0A2971", //Header
@@ -21,7 +24,7 @@ export const theme = extendTheme({ breakpoints: createBreakpoints({
   },
   textStyles: {
     normal: {
-      fontSize: { base: 'xs', md: 'sm', lg:'md',xl:"md" },
+      fontSize: { base: 'xs', md: 'sm', lg: 'md', xl: "md" }
     },
     roadHead: {
       fontSize:{ base: 'sm', md: 'md', lg: 'lg', xl: "xl" }

@@ -34,7 +34,7 @@ export const Header = () => {
         </Flex>
         <Button
           size={'md'}
-          fontSize={{ base: 'xs', md: 'md' }}
+          fontSize={"13px"}
           fontWeight={400}
           bg={'dark.200'}
           _hover={{ opacity: 0.8 }}
