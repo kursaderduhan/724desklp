@@ -19,8 +19,8 @@ export const Header = () => {
       align={'center'}
       w={'full'}
     >
-      <Flex flex={{ base: 2 }} justifyContent={'space-between'} w={"full"} px={2}>
-        <Image alt={'DeskIcon'} src={'/724DeskLogo.svg'} />
+      <Flex flex={{ base: 2 }} justifyContent={'space-between'} w={"full"} px={2} alignItems={"center"}>
+        <Image alt={'DeskIcon'} src={'/724DeskLogo.svg'} w={"76px"} h={"24px"} />
         <Flex
           alignItems={'center'}
           color={'white'} w={"full"} justifyContent={"center"}
@@ -39,13 +39,13 @@ export const Header = () => {
           bg={'dark.200'}
           _hover={{ opacity: 0.8 }}
           color={'white'}
-          gap={1}
+          gap={1} w={"148px"} h={"36px"}
         >
           <Image
             src={'diamonds.png'}
             alt={'diamonds'}
-            w={{ base: 4, md: 6 }}
-            h={{ base: 4, md: 6 }}
+            w={"18px"}
+            h={"18px"}
           />
           Join Whitelist
         </Button>
@@ -77,7 +77,7 @@ interface LinkItemProps extends FlexProps {
 }
 
 const NavLink = ({ children, ...rest }: LinkItemProps) => (
-  <Text fontSize={{base:"xs",md:"md", xl:"md"}} >
+  <Text textStyle={"headerText"}>
     <Link href={rest.link}>{children}</Link>
   </Text>
 )

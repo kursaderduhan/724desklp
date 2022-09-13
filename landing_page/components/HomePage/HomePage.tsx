@@ -35,19 +35,19 @@ export const Home = () => {
             iyi uzmanlarından <br/> destek alabileceğiniz bir platformdur.
           </Text>
           <HStack w={'full'}>
-            <Button color={"#2C4EC6"} bg={"white"} gap={1}> <Image src={"/document-text.png"} alt={"buttonIcon"} w={6} h={6}/>Whitepaper</Button>
-            <Image src={'36dp.png'} w={10} h={10} alt={'play'} />
+            <Button color={"#2C4EC6"} w={"156px"} h={"44px"} bg={"white"} gap={3} fontSize={"13px"} alignItems={"center"}> <Image src={"/document-text.png"} alt={"buttonIcon"} w={"18px"} h={"18px"}/>Whitepaper</Button>
+            <Image src={'36dp.png'} w={"36px"} h={"36px"} alt={'play'} />
           </HStack>
         </VStack>
         <Image
           src={'/1.gif'}
-          w={{ base: 200, md: 549 }}
-          h={{ base: 200, md: 549 }}
+          w={{ base: 200, md: 549,lg:549,xl:549 }}
+          h={{ base: 200, md: 549,lg:549,xl:549 }}
           alt={'deskIcon'}
         />
       </HStack>
       <Image src={'/timer.png'} alt={'homeTable'} />
-      <Image src={'/scroll.gif'} w={{ base: "20px", md: "40px" }} h={{base:"40px",md:"70px"}} alt={'ıcon'} />
+      <Image src={'/scroll.gif'} w={{ base: "40px", md: "40px",lg:"40px",xl:"40px" }} h={{base:"70px",md:"70px",lg:"70px",xl:"70px"}} alt={'ıcon'} />
     </VStack>
   )
 }
