@@ -30,7 +30,8 @@ export const theme = extendTheme({ breakpoints: createBreakpoints({
     dark: {
       100: "#0A2971", //Header
       200: "#2C4EC6",
-      300: "#000000" //JoinButton
+      300: "#000000", //JoinButton
+      400: "#666666"  //textGray
       },
     light: {
       100: "#ffffff" //White
@@ -47,7 +48,7 @@ export const theme = extendTheme({ breakpoints: createBreakpoints({
       fontSize:{ base: 'sm', md: 'md', lg: 'lg', xl: "xl" }
     },
     headText: {
-      fontSize: {base: "2xl", md: "3xl", lg: "4xl", xl:"5xl"}
+      fontSize: {base: "2xl", md: "3xl", lg: "4xl", xl:"4xl"}
     },
     featuresHead: {
       fontSize: { base: 'sm', md: 'md', lg: 'lg', xl: "xl" }

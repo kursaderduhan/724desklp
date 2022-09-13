@@ -16,11 +16,11 @@ import { GrShare } from 'react-icons/gr'
 
 export const Tokenomics = () => {
   return (
-    <VStack px={{ base: 1, md: 10, xl: 130 }} py={'25'}>
+    <VStack px={{ base: 1, md: 10, xl: 146 }} py={'25'}>
       <Text fontWeight={'bold'} fontSize={'4xl'}>
         Tokenomics
       </Text>
-      <Text textAlign={'center'} textStyle={"normal"}>
+      <Text textAlign={'center'} textStyle={"normal"} color={"#666666"}>
         Platformumuzun token ekonomisi, uzmanlarımızı, yatırımcılarımızı,
         müşterilerimizi desteklemek ve korumaya yönelik olarak <br />{' '}
         planlanmıştır. Tokenimize sahip olan kişilerin ellerindeki tokenlerin
@@ -29,15 +29,15 @@ export const Tokenomics = () => {
       <HStack w={'full'} justifyContent={'space-between'} gap={25}>
         <VStack alignItems={'center'}>
           <HStack alignSelf={'flex-start'}>
-            <Circle size='40px' bg='orange' alignSelf={'flex-start'} />
-            <VStack alignItems={'flex-start'}>
-              <Text color={'orange'} fontWeight={'bold'}>
+            <Circle size = '20px' bg='orange' alignSelf={'flex-start'} />
+            <VStack alignItems={'flex-start'} textStyle={'normal'}>
+              <Text color={'orange'} fontWeight={500}>
                 35%
               </Text>
-              <Text textStyle={'normal'} fontWeight={'bold'}>
+              <Text fontWeight={500}>
                 Platform
               </Text>
-              <Text textStyle={'normal'}>
+              <Text color={"#666666"}>
                 Platformun işletilmesi ve gelir modelinin oturtulmasında <br />{' '}
                 önemli bir görev yerine getirmiş olacaktır.
               </Text>
@@ -45,15 +45,15 @@ export const Tokenomics = () => {
             </VStack>
           </HStack>
           <HStack alignSelf={'flex-start'}>
-            <Circle size='40px' bg='red' alignSelf={'flex-start'} />
+            <Circle size = '20px' bg='red' alignSelf={'flex-start'} />
             <VStack alignItems={'flex-start'} textStyle={"normal"}>
-              <Text color={'red'} fontWeight={'bold'}>
+              <Text color={'red'} fontWeight={500}>
                 16%
               </Text>
-              <Text fontWeight={'bold'}>
+              <Text fontWeight={500}>
                 Uzmanlar
               </Text>
-              <Text >
+              <Text color={"#666666"}>
                 Proje bünyesinde yer alacak uzmanlara gelir oluşturması <br />{' '}
                 için ayrılacak kısımdır.
               </Text>
@@ -61,15 +61,15 @@ export const Tokenomics = () => {
             </VStack>
           </HStack>
           <HStack alignSelf={'flex-start'}>
-            <Circle size='40px' bg='orange' alignSelf={'flex-start'} />
+            <Circle size='20px' bg='orange' alignSelf={'flex-start'} />
             <VStack alignItems={'flex-start'}>
-              <Text color={'orange'} fontWeight={'bold'}>
+              <Text color={'orange'} fontWeight={500}>
                 13%
               </Text>
-              <Text textStyle={'normal'} fontWeight={'bold'}>
+              <Text textStyle={'normal'} fontWeight={500}>
                 Reklam
               </Text>
-              <Text textStyle={'normal'}>
+              <Text textStyle={'normal'} color={"#666666"}>
                 Reklam giderlerinin ve devamlılığının sağlanması için <br />{' '}
                 ayrılacak bütçeyi oluşturacaktır.
               </Text>
@@ -79,7 +79,7 @@ export const Tokenomics = () => {
         </VStack>
         <VStack pt={50} gap={{base:10,md:10,xl:5}}>
           <Flex
-            boxSize={{ base: 200, md: 300, xl: 400 }}
+            boxSize={{ base: 200, md: 300,lg:384, xl: 384 }}
             bgImage={'/tokenomics.png'}
             bgPos={'center'}
             bgSize={'cover'}
@@ -89,25 +89,25 @@ export const Tokenomics = () => {
             gap={2}
           >
             <Text
-              fontWeight={'bold'}
-              fontSize={{ base: 'xs', md: 'md', xl: 'xl' }}
+              fontWeight={500}
+              fontSize={{ base: 'xs', md: 'md',lg:"lg", xl: 'lg' }}
             >
               ÜRETİLECEK TOKEN
             </Text>
-            <Text fontWeight={'bold'} fontSize={'2xl'}>
+            <Text fontWeight={500} fontSize={'4xl'}>
               100 M
             </Text>
           </Flex>
           <HStack>
-            <Circle size='40px' bg='#4AA4F9' alignSelf={'flex-start'} />
+            <Circle size = '20px' bg='#4AA4F9' alignSelf={'flex-start'} />
             <VStack alignItems={'flex-start'}>
-              <Text color={'#4AA4F9'} fontWeight={'bold'}>
+              <Text color={'#4AA4F9'} fontWeight={500}>
                 9%
               </Text>
-              <Text textStyle={'normal'} fontWeight={'bold'}>
+              <Text textStyle={'normal'} fontWeight={500}>
                 Yatırımcılar
               </Text>
-              <Text textStyle={'normal'}>
+              <Text textStyle={'normal'} color={"#666666"}>
                 Projemizin geliştirme süreçlerinin en başından itibaren <br />{' '}
                 içinde olan yatırımcılarımıza ayrılan paydır.
               </Text>
@@ -117,15 +117,15 @@ export const Tokenomics = () => {
         </VStack>
         <VStack alignItems={'flex-start'}>
           <HStack alignSelf={'flex-start'}>
-            <Circle size='40px' bg='#8904DB' alignSelf={'flex-start'} />
+            <Circle size = '20px' bg='#8904DB' alignSelf={'flex-start'} />
             <VStack alignItems={'flex-start'}>
-              <Text color={'#8904DB'} fontWeight={'bold'}>
+              <Text color={'#8904DB'} fontWeight={500}>
                 13%
               </Text>
-              <Text textStyle={'normal'} fontWeight={'bold'}>
+              <Text textStyle={'normal'} fontWeight={500}>
                 Takım
               </Text>
-              <Text textStyle={'normal'}>
+              <Text textStyle={'normal'} color={"#666666"}>
                 Projemizin geliştirme süreçlerinin en başından itibaren <br />{' '}
                 içinde olan takımımıza ayrılan paydır.
               </Text>
@@ -133,15 +133,15 @@ export const Tokenomics = () => {
             </VStack>
           </HStack>
           <HStack>
-            <Circle size='40px' bg='#41D334' alignSelf={'flex-start'} />
+            <Circle size = '20px' bg='#41D334' alignSelf={'flex-start'} />
             <VStack alignItems={'flex-start'}>
-              <Text color={'#41D334'} fontWeight='bold'>
+              <Text color={'#41D334'} fontWeight={500}>
                 5%
               </Text>
-              <Text textStyle={'normal'} fontWeight={'bold'}>
+              <Text textStyle={'normal'} fontWeight={500}>
                 Partnerler
               </Text>
-              <Text textStyle={'normal'}>
+              <Text textStyle={'normal'} color={"#666666"}>
                 Proje partnerlerine ayrılacak kısım olacaktır. Ayrılacak bu{' '}
                 <br /> tokenler partnerin ne tür katkı sağladığına göre
                 belirlenip <br /> değerlendirilmesi sağlanacaktır.
@@ -150,15 +150,15 @@ export const Tokenomics = () => {
             </VStack>
           </HStack>
           <HStack>
-            <Circle size='40px' bg='#0DA300' alignSelf={'flex-start'} />
+            <Circle size = '20px' bg='#0DA300' alignSelf={'flex-start'} />
             <VStack alignItems={'flex-start'}>
-              <Text color={'#0DA300'} fontWeight={'bold'}>
+              <Text color={'#0DA300'} fontWeight={500}>
                 9%
               </Text>
-              <Text textStyle={'normal'} fontWeight={'bold'}>
+              <Text textStyle={'normal'} fontWeight={500}>
                 Kurucular
               </Text>
-              <Text textStyle={'normal'}>
+              <Text textStyle={'normal'} color={"#666666"}>
                 Projemizin geliştirme süreçlerinin en başından itibaren <br />{' '}
                 içinde olan kurucularımıza ayrılan paydır.
               </Text>
@@ -169,8 +169,8 @@ export const Tokenomics = () => {
       </HStack>
       <Flex
         bgImage={'/blueBg.png'}
-        w={{ base: 550, md: 750, xl: 1250 }}
-        h={{ base: 250, md: 300, xl: 350 }}
+        w={{ base: 550, md: 750, xl: 792 }}
+        h={{ base: 250, md: 300, xl: 265 }}
         bgSize={'cover'}
         bgPos={'center'}
         borderRadius={20}
@@ -182,7 +182,7 @@ export const Tokenomics = () => {
           py={{ base: 2, md: 30, xl: 55 }}
           alignItems={'flex-start'}
         >
-          <Text color={'white'} fontSize={{ base: 'md', md: 'lg', xl: '2xl' }}>
+          <Text color={'white'} fontSize={{ base: 'md', md: 'lg',lg:"lg",xl: 'xl' }} fontWeight={500}>
             DESK Token Metrics
           </Text>
           <HStack
@@ -196,52 +196,51 @@ export const Tokenomics = () => {
             h={'full'}
             alignItems={'center'}
           >
-            <HStack h={'full'} gap={{ base: 3, md: 10, xl: 50 }}>
-              <VStack fontSize={'md'} alignItems={'flex-start'}>
+            <HStack h={'full'} gap={{ base: 3, md: 10, xl: 21 }}>
+              <VStack fontSize={'xs'} alignItems={'flex-start'} color={"#F6F6F6"} fontWeight={400}>
                 <Text>Price:</Text>
                 <Text>Ticker Symbol:</Text>
                 <Text>Chain:</Text>
                 <Text>Contract Address:</Text>
               </VStack>
               <VStack
-                fontSize={{ base: 'sm', md: 'md' }}
-                fontWeight={'bold'}
+                fontSize={{ base: 'sm', md: 'sm',lg:"sm",xl:"sm" }}
+                fontWeight={500}
                 alignItems={'flex-start'}
               >
                 <Text>$0.54</Text>
-                <HStack>
+                <HStack fontSize={{ base: 'sm', md: 'sm',lg:"sm",xl:"sm" }}>
                   <Image
                     src={'/deskCoin.png'}
                     alt={'desk-symbol'}
-                    w={{ base: 4, md: 4, lg: 6 }}
-                    h={{ base: 4, md: 4, lg: 6 }}
-                    fontSize={{ base: 'sm', md: 'md' }}
+                    w={{ base: 4, md: 4, lg:"20px",xl:"22px" }}
+                    h={{ base: 4, md: 4, lg:"20px",xl:"22px" }}
                   />
-                  <Text fontSize={{ base: 'sm', md: 'md' }}>DESK</Text>
+                  <Text fontSize={{ base: 'sm', md: 'sm',lg:"sm",xl:"sm" }}>DESK</Text>
                 </HStack>
                 <HStack>
                   <Image
                     src={'binance.png'}
                     alt={'bep-20'}
-                    w={{ base: 4, md: 4, lg: 6 }}
-                    h={{ base: 4, md: 4, lg: 6 }}
+                    w={{ base: 4, md: 4, lg:"20px",xl:"22px" }}
+                    h={{ base: 4, md: 4, lg:"20px",xl:"22px" }}
                   />
-                  <Text fontSize={{ base: 'sm', md: 'md' }}>BSC (BEP-20)</Text>
+                  <Text fontSize={{ base: 'sm', md: 'sm',lg:"sm",xl:"sm" }}>BSC (BEP-20)</Text>
                 </HStack>
                 <HStack>
-                  <Text fontSize={{ base: 'sm', md: 'md' }}>0x86...5453</Text>
+                  <Text fontSize={{ base: 'sm', md: 'sm',lg:"sm",xl:"sm" }}>0x86...5453</Text>
                   <GrShare />
                 </HStack>
               </VStack>
             </HStack>
-            <HStack>
-              <VStack fontSize={'md'} alignItems={'flex-start'}>
+            <HStack gap={5}>
+              <VStack fontSize={'xs'} alignItems={'flex-start'} color={"#F6F6F6"} fontWeight={400}>
                 <Text>Max Supply:</Text>
                 <Text>Total Supply:</Text>
                 <Text>Circulation Supply:</Text>
                 <Text>Burned:</Text>
               </VStack>
-              <VStack fontWeight={'bold'} fontSize={{ base: 'sm', md: 'md' }}>
+              <VStack fontWeight={500} fontSize={{ base: 'sm', md: 'sm',lg:"sm",xl:"sm" }} alignItems={"flex-start"} >
                 <Text>100 000 000</Text>
                 <Text>14 284 526</Text>
                 <Text>17 716 965</Text>
