@@ -1,5 +1,5 @@
 import React, { memo } from 'react'
-import { HStack, VStack, Text, Button, Image, Flex } from '@chakra-ui/react'
+import { HStack, VStack, Text, Button, Image, Flex,Container } from '@chakra-ui/react'
 
 export const Home = () => {
   return (
@@ -8,9 +8,9 @@ export const Home = () => {
       w={'full'}
       bgImage={'/homePageBg.png'}
       bgPos={'center'}
-      bgSize={'cover'}
-      px={{ base: 1, md: 30, lg: 120 }} pb={10}
+      bgSize={'cover'} py={50}
     >
+      <Container maxW={"1200px"} centerContent>
       <HStack w={'full'} justifyContent={'space-between'} px={2}>
         <VStack w={'full'} justifyContent={'flex-start'} gap={5}>
           <VStack
@@ -47,7 +47,8 @@ export const Home = () => {
         />
       </HStack>
       <Image src={'/timer.png'} alt={'homeTable'} />
-      <Image src={'/scroll.gif'} w={{ base: "40px", md: "40px",lg:"40px",xl:"40px" }} h={{base:"70px",md:"70px",lg:"70px",xl:"70px"}} alt={'ıcon'} />
+        <Image src={'/scroll.gif'} w={{ base: "40px", md: "40px", lg: "40px", xl: "40px" }} h={{ base: "70px", md: "70px", lg: "70px", xl: "70px" }} alt={'ıcon'} />
+        </Container>
     </VStack>
   )
 }

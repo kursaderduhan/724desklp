@@ -11,7 +11,7 @@ import {
   FormLabel,
   Textarea,
   Button,
-  Flex
+  Flex,Container
 } from '@chakra-ui/react'
 export const Investor = () => {
   return (
@@ -24,7 +24,8 @@ export const Investor = () => {
       px={50}
       py={20}
     >
-      <VStack alignItems={'flex-start'} alignSelf={'flex-start'} pl={{base:0,md:10,lg:20,xl:40}} textStyle={"normal"} color={"lightgray"}>
+      <Container maxW={"1200px"} centerContent>
+      <VStack alignItems={'flex-start'} alignSelf={'flex-start'}  textStyle={"normal"} color={"lightgray"}>
         <Text fontWeight={'bold'} textStyle={"headText"} color={"white"}>
           Yatırımcılar İçin
         </Text>
@@ -125,7 +126,8 @@ export const Investor = () => {
             <Image src={"/send.png"} alt={"send"} w={6} h={6} />
           </Button>
         </VStack>
-      </Flex>
+        </Flex>
+        </Container>
     </VStack>
   )
 }

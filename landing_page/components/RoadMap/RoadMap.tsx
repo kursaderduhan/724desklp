@@ -7,7 +7,7 @@ import {
   UnorderedList,
   ListItem,
   Flex,
-  Stack
+  Stack,Container
 } from '@chakra-ui/react'
 import React, { memo } from 'react'
 
@@ -20,21 +20,21 @@ export const RoadMap = () => {
       bgPos={'center'}
       bgSize={'cover'}
     >
+      <Container centerContent maxW={"1200px"}>
       <VStack
         h={'full'}
         color={'white'}
         w={'full'}
-        justifyContent={'center'}
+        py={50}    
         alignContent={'center'}
-        py='100'
       >
         <Text
-          textStyle={"headText"}
+          textStyle={"roadMapHead"}
           alignSelf={'center'}
         >
           Proje İlerleme Süreci
         </Text>
-        <Text alignSelf={'center'} textStyle={'normal'}>
+          <Text alignSelf={'center'} textStyle={'normal'} color={"#F6F6F6"} fontWeight={400}>
           Proje çalışmaları, hazırlık süreçleri ve yayınlama süresi hakkında
           bilgiler
         </Text>
@@ -265,7 +265,8 @@ export const RoadMap = () => {
             </Box>
           </VStack>
         </VStack>
-      </VStack>
+        </VStack>
+        </Container>
     </Flex>
   )
 }

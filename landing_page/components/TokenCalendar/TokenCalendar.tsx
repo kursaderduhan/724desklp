@@ -10,12 +10,13 @@ import {
   Th,
   Td,
   TableCaption,
-  TableContainer
+  TableContainer,Container
 } from '@chakra-ui/react'
 
 export const TokenCalendar = () => {
   return (
-    <VStack bgImage={'/CalendarBg.png'} bgPos={'center'} bgSize={'cover'} px={150} py={50} zIndex={1}>
+    <VStack bgImage={'/CalendarBg.png'} bgPos={'center'} bgSize={'cover'} py={50} zIndex={1}>
+      <Container maxW={"1200px"} centerContent>
       <Text fontWeight={'bold'} fontSize={'3xl'} color={"white"} alignSelf={"flex-start"}>
         Serbest Kalma Çizelgesi
       </Text>
@@ -119,7 +120,8 @@ export const TokenCalendar = () => {
             </Tr>
           </Tbody>
         </Table>
-      </TableContainer>
+        </TableContainer>
+        </Container>
     </VStack>
   )
 }

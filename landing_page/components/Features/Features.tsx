@@ -6,12 +6,13 @@ import {
   HStack,
   Stack,
   Circle,
-  Box
+  Box,Container
 } from '@chakra-ui/react'
 
 export const Features = () => {
   return (
     <VStack py={50}>
+      <Container maxW={"1200px"} centerContent> 
       <Text color={'#F27C00'} textStyle={"headText"}>
         Gelişmiş Kullanıcı ve Uzman Yönetim Paneli
       </Text>
@@ -199,7 +200,8 @@ export const Features = () => {
             <br /> faydalanarak uzmanlık sürecini yönetebilirler.
           </Text>
         </VStack>
-      </VStack>
+        </VStack>
+        </Container>
     </VStack>
   )
 }

@@ -15,21 +15,26 @@ import {
   useColorModeValue,
   HStack,
   IconButton,
-  Image
+  Image,
+  Container
 } from '@chakra-ui/react'
 import { AiOutlineLinkedin } from 'react-icons/ai'
 
 export const Experts = () => {
   return (
     <VStack>
-      <VStack
+      <Flex
+        flexDirection={'column'}
+        align={'center'}
         bgImage={'/Mac.png'}
         bgSize={'cover'}
         w={'full'}
         color={'black'}
-        h={1100} pt={50} textStyle={"normal"}
+        h={1100}
+        pt={100}
+        textStyle={'normal'}
       >
-        <Text fontWeight={'bold'} textStyle={"headText"}>
+        <Text fontWeight={'bold'} textStyle={'headText'}>
           Uzmanlar
         </Text>
         <Text textAlign={'center'}>
@@ -42,93 +47,107 @@ export const Experts = () => {
           <br /> kalite puanlarına bağlı olarak platformumuzdan Desk Token elde
           ederek kendilerine ikinci bir gelir de sağlarlar.
         </Text>
-      </VStack>
-        <Button bg={'#F27C00'} color={"white"} _hover={{opacity:0.8}}>Nasıl Uzman Olurum?</Button>
-      <VStack textStyle={"normal"}>
-        <Text fontWeight={'bold'} textStyle={"headText"} alignSelf={'flex-start'}>
-          Team
-        </Text>
-        <Text alignSelf={'flex-start'} color={"gray"}>
-          Projemizin gelişim sürecinde aktif görev alan takım üyelerimiz.
-        </Text>
-        <HStack>
-          {Profile.map(profile => (
-            <ProfileContent
-              // src={profile.ımage}
-              name={profile.name}
-              job={profile.job}
-              link={profile.link}
-              key={profile.key}
-            >
-              {profile.name}
-            </ProfileContent>
-          ))}
-        </HStack>
-      </VStack>
-      <VStack py={100}>
-        <VStack w={'full'} textStyle={"normal"}>
-          <Text fontWeight={'bold'} textStyle={"headText"} alignSelf={'flex-start'}>
-            Topluluk
+      </Flex>
+      <Container maxW={'1200px'}>
+        <Flex w={'full'} justifyContent={'center'}>
+          <Button bg={'#F27C00'} color={'white'} _hover={{ opacity: 0.8 }}>
+            Nasıl Uzman Olurum?
+          </Button>
+        </Flex>
+        <VStack textStyle={'normal'}>
+          <Text
+            fontWeight={'bold'}
+            textStyle={'headText'}
+            alignSelf={'flex-start'}
+          >
+            Team
           </Text>
-          <Text alignSelf={'flex-start'} color={"gray"}>
-            Sosyal medya hesaplarımızı takip ederek son gelişmelerden haberdar
-            olun.
+          <Text alignSelf={'flex-start'} color={'gray'}>
+            Projemizin gelişim sürecinde aktif görev alan takım üyelerimiz.
           </Text>
+          <HStack>
+            {Profile.map(profile => (
+              <ProfileContent
+                // src={profile.ımage}
+                name={profile.name}
+                job={profile.job}
+                link={profile.link}
+                key={profile.key}
+              >
+                {profile.name}
+              </ProfileContent>
+            ))}
+          </HStack>
         </VStack>
-        <HStack gap={120} w={'full'}>
-          <HStack w={350} h={170} boxShadow={'base'} pt={25} px={5}>
-            <Image
-              src={'/telegram.png'}
-              alt={'telegram'}
-              w={12}
-              h={12}
+        <VStack py={100}>
+          <VStack w={'full'} textStyle={'normal'}>
+            <Text
+              fontWeight={'bold'}
+              textStyle={'headText'}
               alignSelf={'flex-start'}
-            />
-            <VStack alignItems={'flex-start'} alignSelf={'flex-start'}>
-              <Text fontWeight={'bold'}>Telegram Grubu</Text>
-              <Text>
-                Telegram grubumuza katılarak diğer <br /> üyelerimizle bilgi
-                alışverişi yapabilir, <br /> onlara soru sorabilir ve yeni
-                sohbetler başlatabilirsiniz.
-              </Text>
-            </VStack>
-          </HStack>
+            >
+              Topluluk
+            </Text>
+            <Text alignSelf={'flex-start'} color={'gray'}>
+              Sosyal medya hesaplarımızı takip ederek son gelişmelerden haberdar
+              olun.
+            </Text>
+          </VStack>
+          <HStack gap={120} w={'full'}>
+            <HStack w={350} h={170} boxShadow={'base'} pt={25} px={5}>
+              <Image
+                src={'/telegram.png'}
+                alt={'telegram'}
+                w={12}
+                h={12}
+                alignSelf={'flex-start'}
+              />
+              <VStack alignItems={'flex-start'} alignSelf={'flex-start'}>
+                <Text fontWeight={'bold'}>Telegram Grubu</Text>
+                <Text>
+                  Telegram grubumuza katılarak diğer <br /> üyelerimizle bilgi
+                  alışverişi yapabilir, <br /> onlara soru sorabilir ve yeni
+                  sohbetler başlatabilirsiniz.
+                </Text>
+              </VStack>
+            </HStack>
 
-          <HStack w={350} h={170} boxShadow={'base'} pt={25} px={5}>
-            <Image
-              src={'/facebook-1.png'}
-              alt={'facebook'}
-              w={12}
-              h={12}
-              alignSelf={'flex-start'}
-            />
-            <VStack alignItems={'flex-start'} alignSelf={'flex-start'}>
-              <Text fontWeight={'bold'}>Facebook Grubu</Text>
-              <Text>
-                Facebook grubumuza dahil olarak son <br /> gelişmelerden
-                haberdar olabilirsiniz.
-              </Text>
-            </VStack>
-          </HStack>
+            <HStack w={350} h={170} boxShadow={'base'} pt={25} px={5}>
+              <Image
+                src={'/facebook-1.png'}
+                alt={'facebook'}
+                w={12}
+                h={12}
+                alignSelf={'flex-start'}
+              />
+              <VStack alignItems={'flex-start'} alignSelf={'flex-start'}>
+                <Text fontWeight={'bold'}>Facebook Grubu</Text>
+                <Text>
+                  Facebook grubumuza dahil olarak son <br /> gelişmelerden
+                  haberdar olabilirsiniz.
+                </Text>
+              </VStack>
+            </HStack>
 
-          <HStack w={350} h={170} boxShadow={'base'} pt={25} px={5}>
-            <Image
-              src={'/discord.png'}
-              alt={'discord'}
-              w={12}
-              h={12}
-              alignSelf={'flex-start'}
-            />
-            <VStack alignItems={'flex-start'} alignSelf={'flex-start'}>
-              <Text fontWeight={'bold'}>Discord Grubu</Text>
-              <Text>
-                Discord grubumuza katılarak diğer <br /> üyelerimiz ile sohbet
-                ederek bilgi <br /> alışverişinde bulunabilirsiniz.
-              </Text>
-            </VStack>
+            <HStack w={350} h={170} boxShadow={'base'} pt={25} px={5}>
+              <Image
+                src={'/discord.png'}
+                alt={'discord'}
+                w={12}
+                h={12}
+                alignSelf={'flex-start'}
+              />
+              <VStack alignItems={'flex-start'} alignSelf={'flex-start'}>
+                <Text fontWeight={'bold'}>Discord Grubu</Text>
+                <Text>
+                  Discord grubumuza katılarak diğer <br /> üyelerimiz ile sohbet
+                  ederek bilgi <br /> alışverişinde bulunabilirsiniz.
+                </Text>
+              </VStack>
+            </HStack>
           </HStack>
-        </HStack>
-      </VStack>
+        </VStack>
+      </Container>
     </VStack>
   )
 }
@@ -189,9 +208,10 @@ const ProfileContent = ({ children, ...rest }: ProfileLinkProps) => (
       boxShadow={'2xl'}
       rounded={'lg'}
       p={6}
-      textAlign={'center'} color={"black"} transform={'auto'}
-      _hover={{ scale: '1.04', opacity: '0.7',transition:"0.6s" }}
-
+      textAlign={'center'}
+      color={'black'}
+      transform={'auto'}
+      _hover={{ scale: '1.04', opacity: '0.7', transition: '0.6s' }}
     >
       <Avatar
         size={'xl'}
@@ -200,9 +220,7 @@ const ProfileContent = ({ children, ...rest }: ProfileLinkProps) => (
         mb={4}
         pos={'relative'}
       />
-      <Heading fontSize={'2xl'} >
-        {rest.name}
-      </Heading>
+      <Heading fontSize={'2xl'}>{rest.name}</Heading>
       <Text fontWeight={600} color={'gray.500'} mb={4}>
         {rest.job}
       </Text>

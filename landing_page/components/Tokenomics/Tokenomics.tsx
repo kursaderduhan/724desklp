@@ -10,13 +10,15 @@ import {
   Divider,
   Flex,
   Icon,
-  IconButton
+  IconButton,
+  Container
 } from '@chakra-ui/react'
 import { GrShare } from 'react-icons/gr'
 
 export const Tokenomics = () => {
   return (
-    <VStack px={{ base: 1, md: 10, xl: 146 }} py={'25'}>
+    <VStack py={'50'}>
+      <Container maxW={"1200px"} centerContent> 
       <Text fontWeight={'bold'} fontSize={'4xl'}>
         Tokenomics
       </Text>
@@ -249,7 +251,8 @@ export const Tokenomics = () => {
             </HStack>
           </HStack>
         </VStack>
-      </Flex>
+        </Flex>
+        </Container>
     </VStack>
   )
 }

@@ -1,9 +1,10 @@
-import { HStack, VStack, Image, Text, Flex,Box } from '@chakra-ui/react'
+import { HStack, VStack, Image, Text, Flex,Box,Container } from '@chakra-ui/react'
 import React, { memo } from 'react'
 
 export const DeskToken = () => {
   return (
-    <VStack bgImage={"/869.png"} py={50} gap={{base:50,md:100,lg:150,xl:250}} px={5}>
+    <VStack bgImage={"/869.png"} py={50}  >
+      <Container centerContent maxW={"1200px"}>
       <HStack pos={"relative"} justifyContent={"space-around"} w={"full"}  display={"flex"}>
         <Flex pos={"absolute"} w={"full"} mr={{base:20,md:0,lg:0,xl:0}} ml={{base:0,md:0,lg:10,xl:350}}>
           <Image src={'/2.gif'} alt={'2'} w={{base:300,md:350,lg:450,xl:550}}/>
@@ -32,7 +33,8 @@ export const DeskToken = () => {
           </Text>
         </VStack>
         <Image src={'/3.gif'} alt={'3'} w={{base:250,md:350,lg:450, xl:550}}/>
-      </HStack>
+        </HStack>
+        </Container>
     </VStack>
   )
 }

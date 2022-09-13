@@ -44,6 +44,9 @@ export const theme = extendTheme({ breakpoints: createBreakpoints({
     normal: {
       fontSize: { base: 'xs', md: 'sm', lg: 'sm', xl: "sm" }
     },
+    roadMapHead: {
+      fontSize: { base: 'xs', md: 'sm', lg: 'sm', xl: "5xl" }
+    },
     roadHead: {
       fontSize:{ base: 'sm', md: 'md', lg: 'lg', xl: "xl" }
     },
