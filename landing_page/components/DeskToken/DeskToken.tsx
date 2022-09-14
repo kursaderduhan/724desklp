@@ -4,12 +4,12 @@ import React, { memo } from 'react'
 export const DeskToken = () => {
   return (
     <VStack bgImage={"/869.png"} py={50}  >
-      <Container centerContent maxW={"1200px"}>
+      <Container centerContent maxW={"1200px"} gap={150}>
       <HStack pos={"relative"} justifyContent={"space-around"} w={"full"}  display={"flex"}>
-        <Flex pos={"absolute"} w={"full"} mr={{base:20,md:0,lg:0,xl:0}} ml={{base:0,md:0,lg:10,xl:350}}>
+        <Flex pos={"absolute"} w={"full"} >
           <Image src={'/2.gif'} alt={'2'} w={{base:300,md:350,lg:450,xl:550}}/>
         </Flex>
-        <Box w={{base:550,md:500,lg:400,xl:0}}></Box>
+        <Box w={{base:550,md:500,lg:400,xl:588}}></Box>
         <VStack color={"white"} textStyle={"normal"}>
           <Text fontWeight={'bold'} textStyle={"headText"} alignSelf={"flex-start"}>Desk Token Nedir?</Text>
           <Text>
