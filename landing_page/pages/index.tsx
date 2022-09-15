@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flex, Container } from '@chakra-ui/react'
+import { Flex, Container,Box } from '@chakra-ui/react'
 import { NextPage } from 'next'
 import Layout from '@components/Layout/Layout'
 import HomePage from '@components/HomePage/HomePage'
@@ -17,8 +17,7 @@ import Footer from '@components/Footer/Footer'
 
 const Home: NextPage = () => {
   return (
-    // <Layout>
-    <Flex flexDirection={'column'} w={'100vw'}>
+    <Box flexDirection={'column'} minW={'max-content'}>
       <Header />
       <HomePage />
       <Tokenomics />
@@ -31,8 +30,7 @@ const Home: NextPage = () => {
       <Investor />
       <Exploring />
       <Footer />
-    </Flex>
-    // </Layout>
+    </Box>
   )
 }
 

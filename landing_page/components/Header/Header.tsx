@@ -17,7 +17,7 @@ export const Header = () => {
       color={'light.100'}
       minH={'65px'}
       align={'center'}
-      w={'full'}
+      minW={'100vw'}
       h={'full'}
       pos={'sticky'}
       top={0}

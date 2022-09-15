@@ -5,7 +5,7 @@ export const Home = () => {
   return (
     <VStack
       h={'full'}
-      w={'full'}
+      w={'max-content'}
       bgImage={'/homePageBg.png'}
       bgPos={'center'}
       bgSize={'cover'} py={50}
