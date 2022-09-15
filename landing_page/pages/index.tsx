@@ -18,7 +18,7 @@ import Footer from '@components/Footer/Footer'
 const Home: NextPage = () => {
   return (
     // <Layout>
-    <Flex flexDirection={'column'} w={'full'}>
+    <Flex flexDirection={'column'} w={'100vw'}>
       <Header />
       <HomePage />
       <Tokenomics />

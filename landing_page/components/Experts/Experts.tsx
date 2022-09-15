@@ -22,7 +22,7 @@ import { AiOutlineLinkedin } from 'react-icons/ai'
 
 export const Experts = () => {
   return (
-    <VStack bg={'#E5E5E5'}>
+    <VStack bg={'#E5E5E5'} color={"black"}>
       <Flex
         flexDirection={'column'}
         align={'center'}

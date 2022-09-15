@@ -13,7 +13,7 @@ import React, { memo } from 'react'
 
 export const ResultService = () => {
   return (
-    <VStack w={'full'} pt={100}>
+    <VStack w={'full'} pt={100} bg={"white"} color={"black"} >
       <HStack w={'full'} display={'flex'}>
         <VStack pt={75} pl={{base:10,md:20,lg:50,xl:220}} alignItems={'flex-start'} textStyle={"normal"}>
           <Text fontWeight={'bold'} textStyle={"headText"}>

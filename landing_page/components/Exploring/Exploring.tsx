@@ -3,7 +3,7 @@ import { VStack, Button, Text } from '@chakra-ui/react'
 
 export const Exploring = () => {
   return (
-    <VStack h={600} py={100} gap={15} textStyle={"normal"}>
+    <VStack h={600} py={100} gap={15} textStyle={"normal"} bg={"white"} color={"black"} >
       <Text fontWeight={"bold"} fontSize={"38px"}>Keşfetmeye Başla</Text>
       <Text textAlign={"center"} color={"#666666"} fontSize={"sm"}>
         724Desk’in sana özel sunduğu avantajları hemen <br /> keşfetmeye başla!

@@ -11,7 +11,7 @@ import {
 
 export const Features = () => {
   return (
-    <VStack py={50}>
+    <VStack py={50} bg={"white"} color={"black"}>
       <Container maxW={"1200px"} centerContent> 
       <Text color={'#F27C00'} textStyle={"headText"}>
         Gelişmiş Kullanıcı ve Uzman Yönetim Paneli
