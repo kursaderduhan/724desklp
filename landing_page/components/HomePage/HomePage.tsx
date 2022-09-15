@@ -4,8 +4,8 @@ import { HStack, VStack, Text, Button, Image, Flex,Container } from '@chakra-ui/
 export const Home = () => {
   return (
     <VStack
-      h={'full'}
-      w={'max-content'}
+      h={'full'} w={"full"}
+      minW={'max-content'}
       bgImage={'/homePageBg.png'}
       bgPos={'center'}
       bgSize={'cover'} py={50}

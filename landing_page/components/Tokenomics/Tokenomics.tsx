@@ -17,7 +17,7 @@ import { GrShare } from 'react-icons/gr'
 
 export const Tokenomics = () => {
   return (
-    <VStack py={'50'} bg={"white"}>
+    <VStack py={'50'} bg={"white"} color={"black"}>
       <Container maxW={"1200px"} centerContent> 
       <Text fontWeight={'bold'} fontSize={'4xl'}>
         Tokenomics

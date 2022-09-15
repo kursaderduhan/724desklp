@@ -41,7 +41,7 @@ export const ResultService = () => {
         <Box
           position={'absolute'}
           justifyContent={'flex-end'}
-          display={'flex'}
+          display={'flex'} 
           w={'full'}
         >
           <Image
@@ -111,7 +111,7 @@ export const ResultService = () => {
           </VStack>
         </HStack>
       </HStack>
-      <VStack pos={'relative'} pt={150} pb={100} px="2">
+      <VStack pos={'relative'} pt={150} pb={100} px="2" overflow={"hidden"}>
         <Flex
           pos={'absolute'}
           w={{base:600,md:700,lg:800,xl:900}}
