@@ -55,7 +55,7 @@ export const RoadMap = () => {
               h={{ base: 750, md: 800, lg: 900, xl: 1100 }}
               pt={25}
             />
-            <VStack zIndex={1} w={820} gap={75}>
+            <VStack zIndex={1} w={820} gap={{base:25,md:50,lg:50,xl:75}}>
               <Flex
                 alignSelf={'flex-end'}
                 pr={10}

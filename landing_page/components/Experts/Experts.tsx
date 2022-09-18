@@ -30,7 +30,7 @@ export const Experts = () => {
         bgSize={'cover'}
         w={'full'}
         color={'black'} bgPos={"center"}
-        h={'1100px'}
+        h={'1200px'}
         pt={100}
         textStyle={'normal'}
         justifyContent={'space-between'}

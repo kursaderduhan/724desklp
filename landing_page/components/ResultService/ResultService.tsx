@@ -15,7 +15,7 @@ export const ResultService = () => {
   return (
     <VStack w={'full'} pt={100} bg={"white"} color={"black"} >
       <HStack w={'full'} display={'flex'}>
-        <VStack pt={75} pl={{base:10,md:20,lg:50,xl:220}} alignItems={'flex-start'} textStyle={"normal"}>
+        <VStack pt={75} pl={{base:10,md:20,lg:50,xl:220}} alignItems={'flex-start'} textStyle={"normal"} zIndex="1">
           <Text fontWeight={'bold'} textStyle={"headText"}>
             Çözüme anında ulaş
           </Text>
@@ -47,8 +47,8 @@ export const ResultService = () => {
           <Image
             src={'/resultImage.png'}
             alt={'resultImage'}
-            w={{base:250,md:350,lg:450,xl:600}}
-            mt={200}
+            w={{base:250,md:400,lg:450,xl:600}}
+            mt={{base:50,md:100,lg: 200,xl:200}}
           />
         </Box>
         <Box w="250"></Box>

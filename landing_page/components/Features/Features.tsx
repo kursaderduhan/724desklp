@@ -16,7 +16,6 @@ export const Features = () => {
       <Box
         position={'absolute'}
         w={'full'}
-        h={'full'}
         alignSelf={'flex-start'}
         justifyContent={'flex-end'}
         display={'flex'} mt={600}

@@ -93,7 +93,7 @@ export const Investor = () => {
           overflow={'hidden'}
           w={'996px'}
           h={'600px'}
-          px={50}
+          px={50} 
         >
           <VStack
             alignItems={'flex-start'}

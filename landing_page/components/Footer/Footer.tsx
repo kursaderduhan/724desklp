@@ -32,7 +32,7 @@ export const Footer = () => {
           <Image src={'/footerLogo.png'} alt={'desk'} />
         </AspectRatio>
       </Box>
-      <Container maxW={'1200px'} centerContent>
+      <Container maxW={'1200px'} centerContent >
         <Flex
           w={'full'}
           h={'full'} alignItems={"center"} alignSelf={"center"} py="50"
