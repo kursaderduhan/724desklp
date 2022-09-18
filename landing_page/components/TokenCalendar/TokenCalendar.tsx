@@ -17,12 +17,12 @@ export const TokenCalendar = () => {
   return (
     <VStack bgImage={'/CalendarBg.png'} bgPos={'center'} bgSize={'cover'} py={50} zIndex={2}>
       <Container maxW={"1200px"} centerContent>
-      <Text fontWeight={'bold'} fontSize={'3xl'} color={"white"} alignSelf={"flex-start"}>
+      <Text fontWeight={'bold'} fontSize={'4xl'} color={"white"} alignSelf={"flex-start"}>
         Serbest Kalma Çizelgesi
       </Text>
-      <Text color={"white"} alignSelf={"flex-start"} fontSize={"1xl"}>Projemizin tokeni olan Desk Token nedir? </Text>
+      <Text color={"#F6F6F6"} alignSelf={"flex-start"} fontSize={"headerText"}>Projemizin tokeni olan Desk Token nedir? </Text>
       <TableContainer color="white" w={"full"} >
-        <Table variant='striped' colorScheme='whiteAlpha' color={"white"} fontSize={"md"}>
+        <Table variant='striped' colorScheme='whiteAlpha' color={"white"} fontSize={"sm"}>
           <Thead>
             <Tr>
               <Th color={"white"}></Th>
