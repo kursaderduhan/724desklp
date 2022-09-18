@@ -54,7 +54,7 @@ export const theme = extendTheme({ breakpoints: createBreakpoints({
       fontSize: {base: "2xl", md: "3xl", lg: "4xl", xl:"4xl"}
     },
     featuresHead: {
-      fontSize: { base: 'sm', md: 'md', lg: 'lg', xl: "xl" }
+      fontSize: { base: 'sm', md: 'md', lg: 'lg', xl: "2xl" }
     },
     footerText: {
       fontSize: {base: "xs", md: "xs", lg: "xs", xl: "xs"}
