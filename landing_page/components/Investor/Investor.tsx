@@ -23,14 +23,14 @@ export const Investor = () => {
       color={'white'}
       w={'full'}
     >
-      <Container maxW={'1200px'} centerContent px='50' py={"100"}>
+      <Container maxW={'1200px'} centerContent px='50' py={'100'}>
         <VStack
           alignItems={'flex-start'}
           alignSelf={'center'}
           textStyle={'normal'}
           color={'lightgray'}
         >
-          <VStack alignItems={"flex-start"}>
+          <VStack alignItems={'flex-start'}>
             <Text fontWeight={'bold'} textStyle={'headText'} color={'white'}>
               Yatırımcılar İçin
             </Text>
@@ -54,7 +54,7 @@ export const Investor = () => {
             <Image
               src={'/iPad-Pro.png'}
               alt={'ipad'}
-              w={{ base: 400, md: 500, lg: 500, xl: 750 }}
+              w={"588px"} h={"348px"}
               alignSelf={'flex-start'}
             />
             <VStack
@@ -68,8 +68,7 @@ export const Investor = () => {
               <UnorderedList pl={5}>
                 <ListItem>
                   Erken dönem yatırımcılarımız, projemiz tokenine daha uygun
-                  maliyetlerle <br />
-                  sahip olmuş olacaklar.
+                  maliyetlerle sahip olmuş olacaklar.
                 </ListItem>
                 <ListItem>
                   Projemiz gelirlerinden net pay elde edecekler.
@@ -86,52 +85,71 @@ export const Investor = () => {
           </HStack>
         </VStack>
         <Flex
-          gap={{ base: 2, md: 5, lg: 20, xl: 40 }}
+          justifyContent={"space-evenly"} py={50}
           bgImage={'/ınv-bg.png'}
           bgPos={'center'}
           bgSize={'cover'}
-          py={10}
-          px={{ base: 2, md: 5, lg: 10, xl: 20 }}
-          borderRadius={10}
+          overflow={"hidden"}
+          w={"996px"} h={"600px"} px={50}
         >
-          <VStack alignItems={'flex-start'} textStyle={'normal'}>
+          <VStack alignItems={'flex-start'} textStyle={'normal'} w={"450px"} gap={5}>
             <Text fontWeight={'bold'} textStyle={'roadHead'}>
               İletişim Bilgilerimiz
             </Text>
-            <Text color={'gray'}>
+            <Text color={'#D4D4D4'}>
               Bizimle İletişime Geçebileceğiniz Adresler.
             </Text>
             <HStack>
-              <Image src={'/sms-tracking.png'} alt={'sms'} w={10} h={10} />
+              <Image
+                src={'/sms-tracking.png'}
+                alt={'sms'}
+                w={'32px'}
+                h={'32px'}
+              />
               <VStack>
-                <Text alignSelf={'flex-start'}>Telefon</Text>
-                <Text>+1 530 535 8035</Text>
+                <Text alignSelf={'flex-start'} textStyle={'headerText'}>
+                  Telefon
+                </Text>
+                <Text fontSize={'15px'}>+1 530 535 8035</Text>
               </VStack>
             </HStack>
             <HStack>
-              <Image src={'/call-calling.png'} alt={'call'} w={10} h={10} />
+              <Image
+                src={'/call-calling.png'}
+                alt={'call'}
+                w={'32px'}
+                h={'32px'}
+              />
               <VStack>
-                <Text alignSelf={'flex-start'}>E-Posta</Text>
-                <Text>invesment@724desk.com</Text>
+                <Text alignSelf={'flex-start'} textStyle={'headerText'}>
+                  E-Posta
+                </Text>
+                <Text fontSize={'15px'}>invesment@724desk.com</Text>
               </VStack>
             </HStack>
           </VStack>
-          <VStack alignItems={'flex-start'} textStyle={'normal'}>
+          <VStack alignItems={'flex-start'} textStyle={'normal'} gap={5} w={"450px"}>
             <Text fontWeight={'bold'} textStyle={'roadHead'}>
               Bize Ulaşın
             </Text>
-            <Text>Lütfen İletişim Bilgilerinizi Yazınız.</Text>
-            <Box>
-              <FormLabel htmlFor='username'>Ad Soyad</FormLabel>
+            <Text textStyle={'headerText'} color={'#D4D4D4'}>
+              Lütfen İletişim Bilgilerinizi Yazınız.
+            </Text>
+            <Box w={"full"}>
+              <FormLabel htmlFor='username'>
+                <Text textStyle={'headerText'}>Ad Soyad</Text>
+              </FormLabel>
               <Input placeholder='Ad Soyad' type={'text'} />
             </Box>
-            <Box alignItems={'flex-start'}>
-              <FormLabel htmlFor='e-posta'>E-Posta</FormLabel>
+            <Box alignItems={'flex-start'} w={"full"}>
+              <FormLabel htmlFor='e-posta'>
+                <Text textStyle={'headerText'}>E-Posta</Text>
+              </FormLabel>
               <Input placeholder='invesment@724desk.com' type={'email'} />
             </Box>
-            <Box>
+            <Box w={'full'}>
               <FormLabel htmlFor=''>
-                <Text>Açıklama</Text>
+                <Text textStyle={'headerText'}>Açıklama</Text>
               </FormLabel>
               <Textarea
                 placeholder='Merhaba, '
@@ -152,8 +170,8 @@ export const Investor = () => {
               _hover={{ opacity: 0.8 }}
               gap={2}
             >
-              Gönder
-              <Image src={'/send.png'} alt={'send'} w={6} h={6} />
+              <Text textStyle={'headerText'}>Gönder</Text>
+              <Image src={'/send.png'} alt={'send'} w={"19px"} h={"19px"} />
             </Button>
           </VStack>
         </Flex>
