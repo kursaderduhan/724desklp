@@ -23,14 +23,13 @@ export const Investor = () => {
       color={'white'}
       w={'full'}
     >
-      <Container maxW={'1200px'} centerContent px='50' py={'100'}>
+      <Container maxW={'1200px'} centerContent  py={'100'}>
         <VStack
           alignItems={'flex-start'}
-          alignSelf={'center'}
           textStyle={'normal'}
           color={'lightgray'}
         >
-          <VStack alignItems={'flex-start'}>
+          <VStack alignItems={'flex-start'} >
             <Text fontWeight={'bold'} textStyle={'headText'} color={'white'}>
               Yatırımcılar İçin
             </Text>
@@ -47,14 +46,15 @@ export const Investor = () => {
 
           <HStack
             w={'full'}
-            justifyContent={'space-around'}
+            justifyContent={'space-between'}
             alignItems={'center'}
-            flexDirection={{ base: 'row', md: 'row', lg: 'row', xl: 'row' }}
+            flexDirection={'row'} 
           >
             <Image
               src={'/iPad-Pro.png'}
               alt={'ipad'}
-              w={"588px"} h={"348px"}
+              w={'588px'}
+              h={'348px'}
               alignSelf={'flex-start'}
             />
             <VStack
@@ -85,14 +85,22 @@ export const Investor = () => {
           </HStack>
         </VStack>
         <Flex
-          justifyContent={"space-evenly"} py={50}
+          justifyContent={'space-evenly'}
+          py={50}
           bgImage={'/ınv-bg.png'}
           bgPos={'center'}
           bgSize={'cover'}
-          overflow={"hidden"}
-          w={"996px"} h={"600px"} px={50}
+          overflow={'hidden'}
+          w={'996px'}
+          h={'600px'}
+          px={50}
         >
-          <VStack alignItems={'flex-start'} textStyle={'normal'} w={"450px"} gap={5}>
+          <VStack
+            alignItems={'flex-start'}
+            textStyle={'normal'}
+            w={'450px'}
+            gap={5}
+          >
             <Text fontWeight={'bold'} textStyle={'roadHead'}>
               İletişim Bilgilerimiz
             </Text>
@@ -128,20 +136,25 @@ export const Investor = () => {
               </VStack>
             </HStack>
           </VStack>
-          <VStack alignItems={'flex-start'} textStyle={'normal'} gap={5} w={"450px"}>
+          <VStack
+            alignItems={'flex-start'}
+            textStyle={'normal'}
+            gap={5}
+            w={'450px'}
+          >
             <Text fontWeight={'bold'} textStyle={'roadHead'}>
               Bize Ulaşın
             </Text>
             <Text textStyle={'headerText'} color={'#D4D4D4'}>
               Lütfen İletişim Bilgilerinizi Yazınız.
             </Text>
-            <Box w={"full"}>
+            <Box w={'full'}>
               <FormLabel htmlFor='username'>
                 <Text textStyle={'headerText'}>Ad Soyad</Text>
               </FormLabel>
               <Input placeholder='Ad Soyad' type={'text'} />
             </Box>
-            <Box alignItems={'flex-start'} w={"full"}>
+            <Box alignItems={'flex-start'} w={'full'}>
               <FormLabel htmlFor='e-posta'>
                 <Text textStyle={'headerText'}>E-Posta</Text>
               </FormLabel>
@@ -171,7 +184,7 @@ export const Investor = () => {
               gap={2}
             >
               <Text textStyle={'headerText'}>Gönder</Text>
-              <Image src={'/send.png'} alt={'send'} w={"19px"} h={"19px"} />
+              <Image src={'/send.png'} alt={'send'} w={'19px'} h={'19px'} />
             </Button>
           </VStack>
         </Flex>
