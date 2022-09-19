@@ -57,8 +57,8 @@ export default memo(Counter)
 const Clock = ({ timerDays, timerHours, timerMinutes, timerSeconds }: any) => {
   return (
     <Flex>
-      <HStack gap={2} fontSize={'4xl'}>
-        <VStack w={'full'} fontWeight={'bold'}>
+      <HStack gap={2} fontSize={'4xl'} fontWeight={500}>
+        <VStack w={'full'}>
           <Text>{timerDays}</Text>
           <Text color={'whiteAlpha.500'} fontSize={'md'}>
             days

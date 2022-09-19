@@ -90,16 +90,16 @@ export const Home = () => {
             <VStack
               w='40%'
               h={'full'}
-              justifyContent={'space-between'}
+              justifyContent={'space-around'}
               display={'flex'}
               alignItems={'flex-start'}
-              py={10}
+              py={5}
             >
-              <Text fontSize={'2xl'}>Public Sale Schadule</Text>
+              <Text fontSize={'3xl'}>Public Sale Schadule</Text>
               <Counter />
             </VStack>
-            <VStack w={'60%'} py={5}>
-              <Text alignSelf={'flex-start'} fontSize={'2xl'}>
+            <VStack w={'60%'} py={5} h={"full"}>
+              <Text alignSelf={'flex-start'} fontSize={'24px'}>
                 18.000.000 DEX Token
               </Text>
               <Text alignSelf={'flex-end'}>Hard Cap</Text>
@@ -107,7 +107,7 @@ export const Home = () => {
                 <Box w={'550px'} h={'20px'} bg={'white'} borderRadius={15} />
               </Box>
               <Text alignSelf={'flex-end'}>375K USD</Text>
-              <Text alignSelf={'flex-start'} fontSize={'2xl'}>
+              <Text alignSelf={'flex-start'} fontSize={'24px'}>
                 1 DEX = 0.10 USD
               </Text>
               <Button
