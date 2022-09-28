@@ -7,7 +7,7 @@ export const theme = extendTheme({ breakpoints: createBreakpoints({
     md: '768px',
     lg: '980px',
     xl: '1270px',
-    myCustomOne: '1920px'
+    xxl: '1920px'
   }),fonts: {
     heading: 'Poppins',
     body: 'Poppins',
