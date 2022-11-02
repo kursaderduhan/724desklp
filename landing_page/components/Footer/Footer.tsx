@@ -17,7 +17,7 @@ export const Footer = () => {
     <VStack
       w={'full'}
       h={400}
-      bgImage={'/footerBg.png'}
+      bgGradient={'radial-gradient(86.81% 154.32% at 11.04% 62.82%, #2573BA 0%, #041860 100%)'}
       flexDirection={'column'}
     >
       <Box
