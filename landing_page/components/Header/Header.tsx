@@ -13,19 +13,15 @@ import {
 export const Header = () => {
   return (
     <Flex
-      bg={'dark.100'}
+      bg='rgba(19,65,136,0.3)'
       color={'light.100'}
-      minH={'65px'}
-      align={'center'}
-      minW={'100vw'}
-      h={'full'}
-      pos={'sticky'}
+      w={"100%"}
+      h={'65px'}
+      pos={'fixed'}
       top={0}
-      // backdropFilter='blur(90px)' filter = 'grayscale(10%)'
-      // backdropContrast='100%'
-      zIndex={4}
+      zIndex={4} align={"center"}
     >
-      <Container maxW={'1200px'} centerContent>
+      <Container maxW={'1200px'} >
         <Flex
           flex={{ base: 2 }}
           justifyContent={'space-between'}
