@@ -170,11 +170,9 @@ export const Tokenomics = () => {
         </VStack>
       </HStack>
       <Flex
-        bgImage={'/blueBg.png'}
+        bgGradient={'linear-gradient(140.62deg, #2573BA 0%, #041860 98.26%)'}
         w={{ base: 550, md: 750, xl: 792 }}
         h={{ base: 250, md: 300, xl: 265 }}
-        bgSize={'cover'}
-        bgPos={'center'}
         borderRadius={20}
       >
         <VStack

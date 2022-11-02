@@ -55,7 +55,11 @@ export const RoadMap = () => {
               h={{ base: 750, md: 800, lg: 900, xl: 1100 }}
               pt={25}
             />
-            <VStack zIndex={1} w={820} gap={{base:25,md:50,lg:50,xl:75}}>
+            <VStack
+              zIndex={1}
+              w={820}
+              gap={{ base: 25, md: 50, lg: 50, xl: 75 }}
+            >
               <Flex
                 alignSelf={'flex-end'}
                 pr={10}
@@ -271,12 +275,14 @@ export const RoadMap = () => {
                 flexDirection={'row'}
                 gap={3}
                 justifyContent={'flex-end'}
-                w={'full'} pl={5}
+                w={'full'}
+                pl={5}
               >
                 <Image
                   alt={'q5'}
                   src={'/Q5.png'}
-                 w={"32px"} h={"31px"}
+                  w={'32px'}
+                  h={'31px'}
                   alignSelf={'flex-start'}
                   mt={2}
                 />
@@ -285,14 +291,19 @@ export const RoadMap = () => {
                     alt={'frame-icon'}
                     src={'/q5Frame.png'}
                     w={'60px'}
-                    h={'60px'} alignSelf={"flex-start"}
+                    h={'60px'}
+                    alignSelf={'flex-start'}
                   />
                   <VStack color={'white'} textStyle={'roadHead'}>
                     <HStack alignSelf={'flex-start'}>
-                      <Text alignSelf={'flex-start'} fontWeight={500}>5.Aşama</Text>
-                      <Text fontSize={"sm"}>01/2023</Text>
+                      <Text alignSelf={'flex-start'} fontWeight={500}>
+                        5.Aşama
+                      </Text>
+                      <Text fontSize={'sm'}>01/2023</Text>
                     </HStack>
-                    <Text alignSelf={'flex-start'} fontWeight={500}>Yayınlama Aşaması</Text>
+                    <Text alignSelf={'flex-start'} fontWeight={500}>
+                      Yayınlama Aşaması
+                    </Text>
                     <UnorderedList
                       pl={'5'}
                       color={'lightgray'}

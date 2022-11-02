@@ -17,9 +17,7 @@ import {
 export const Investor = () => {
   return (
     <VStack
-      bgImage={'/ınvestorBg.png'}
-      bgSize={'cover'}
-      bgPos={'center'}
+      bgGradient={'linear-gradient(266.69deg, #2573BA 0%, #1A559C 97.2%, #041860 168.14%)'}
       color={'white'}
       w={'full'}
     >
@@ -87,9 +85,7 @@ export const Investor = () => {
         <Flex
           justifyContent={'space-evenly'}
           py={50}
-          bgImage={'/ınv-bg.png'}
-          bgPos={'center'}
-          bgSize={'cover'}
+          bg={'#164D8F'}
           overflow={'hidden'}
           w={'996px'}
           h={'600px'}

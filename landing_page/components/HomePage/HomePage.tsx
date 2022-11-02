@@ -19,7 +19,7 @@ export const Home = () => {
       h={'full'}
       w={'full'}
       minW={'max-content'}
-      bgImage={'/homePageBg.png'}
+      bgGradient={'radial-gradient(86.81% 154.32% at 11.04% 62.82%, #2573BA 0%, #041860 100%)'}
       bgPos={'center'}
       bgSize={'cover'}
       py={50}

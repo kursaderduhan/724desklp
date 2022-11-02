@@ -22,7 +22,7 @@ import { AiOutlineLinkedin } from 'react-icons/ai'
 
 export const Experts = () => {
   return (
-    <VStack bg={'#E5E5E5'} color={"black"}>
+    <VStack bg={'#FAFAFA'} color={"black"}>
       <Flex
         flexDirection={'column'}
         align={'center'}
@@ -72,7 +72,7 @@ export const Experts = () => {
           <HStack>
             {Profile.map(profile => (
               <ProfileContent
-                // src={profile.ımage}
+                image={profile.image}
                 name={profile.name}
                 job={profile.job}
                 link={profile.link}
@@ -186,7 +186,7 @@ export const Experts = () => {
 export default memo(Experts)
 
 interface ProfileProps {
-  Image: string
+  image: string
   name: string
   job: string
   link: string
@@ -195,28 +195,28 @@ interface ProfileProps {
 
 const Profile: Array<ProfileProps> = [
   {
-    Image: '/binance.png',
+    image: 'https://bit.ly/ryan-florence',
     name: 'Ahmet Hamdi Tanpınar',
     job: 'CEO and Entrepreneur',
     link: '',
     key: 'team-1'
   },
   {
-    Image: '',
+    image: 'https://bit.ly/prosper-baba',
     name: 'Natalla Donald',
     job: 'CEO and Writer',
     link: '',
     key: 'team-2'
   },
   {
-    Image: '',
+    image: 'https://bit.ly/code-beast',
     name: 'Susan Helen',
     job: 'CopyWriter',
     link: '',
     key: 'team-3'
   },
   {
-    Image: '',
+    image: 'https://bit.ly/sage-adebayo',
     name: 'Fatih Demirkan',
     job: 'UI & UX Designer',
     link: '',
@@ -225,7 +225,7 @@ const Profile: Array<ProfileProps> = [
 ]
 
 interface ProfileLinkProps extends FlexProps {
-  Image?: string
+  image: string
   name: string
   job: string
   link: string
@@ -244,9 +244,9 @@ const ProfileContent = ({ children, ...rest }: ProfileLinkProps) => (
       color={'black'}
       transform={'auto'}
       _hover={{ scale: '1.04', opacity: '0.7', transition: '0.6s' }}
-      bg={'white'}
+      bg={'white'} {...rest}
     >
-      <Avatar size={'xl'} src={''} mb={4} pos={'relative'} />
+      <Avatar size={'xl'} src={rest.image} mb={4} pos={'relative'} />
       <Heading fontSize={'2xl'}>{rest.name}</Heading>
       <Text fontWeight={600} color={'gray.500'} mb={4}>
         {rest.job}

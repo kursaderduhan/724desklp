@@ -3,7 +3,7 @@ import React, { memo } from 'react'
 
 export const DeskToken = () => {
   return (
-    <VStack bgImage={"/869.png"} py={50}  >
+    <VStack bgGradient={"linear-gradient(266.69deg, #2573BA 0%, #1A559C 97.2%, #041860 168.14%)"} py={50}  >
       <Container centerContent maxW={"1200px"} gap={150}>
       <HStack pos={"relative"} justifyContent={"space-around"} w={"full"}  display={"flex"}>
         <Flex pos={"absolute"} w={"full"} >
