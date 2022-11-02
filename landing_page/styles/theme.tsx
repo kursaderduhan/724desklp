@@ -39,7 +39,7 @@ export const theme = extendTheme({ breakpoints: createBreakpoints({
   },
   textStyles: {
     headerText: {
-      fontSize: {base:"sm",md:"sm",lg:"sm",xl:"sm"}  
+      fontSize: {base:"xs",md:"sm",lg:"sm",xl:"sm"}  
     },
     normal: {
       fontSize: { base: 'xs', md: 'sm', lg: 'sm', xl: "sm" }

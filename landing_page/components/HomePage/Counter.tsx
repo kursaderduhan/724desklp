@@ -10,7 +10,7 @@ export const Counter = () => {
   let interval: any
 
   const startTimer = () => {
-    const countDownDate = new Date('October 29,2022 ').getTime()
+    const countDownDate = new Date('December 29,2022 ').getTime()
 
     interval = setInterval(() => {
       const now = new Date().getTime()

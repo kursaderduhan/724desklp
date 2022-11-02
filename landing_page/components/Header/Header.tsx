@@ -23,7 +23,7 @@ export const Header = () => {
     >
       <Container maxW={'1200px'} >
         <Flex
-          flex={{ base: 2 }}
+          flex={{ base: 1 }}
           justifyContent={'space-between'}
           w={'full'}
           alignItems={'center'}
@@ -31,7 +31,7 @@ export const Header = () => {
           <Image
             alt={'DeskIcon'}
             src={'/724DeskLogo.svg'}
-            w={'76px'}
+            w={{base:"46px",md:'76px'}}
             h={'24px'}
           />
           <Flex
@@ -39,7 +39,7 @@ export const Header = () => {
             color={'white'}
             w={'full'}
             justifyContent={'center'}
-            gap={{ base: 1, md: 5, xl: 55 }}
+            gap={{ base: 2, md: 5, xl: 55 }}
           >
             {Links.map(link => (
               <NavLink key={link.key} name={link.name} link={link.link}>
@@ -48,21 +48,21 @@ export const Header = () => {
             ))}
           </Flex>
           <Button
-            size={'md'}
-            fontSize={'13px'}
+            size={'sm'}
+            fontSize={{base:"10px",md:'13px'}}
             fontWeight={400}
             bg={'dark.200'}
             _hover={{ opacity: 0.8 }}
             color={'white'}
             gap={1}
-            w={'148px'}
+            w={{base:"110px",md:'148px'}}
             h={'36px'}
           >
             <Image
               src={'diamonds.png'}
               alt={'diamonds'}
-              w={'18px'}
-              h={'18px'}
+              w={{base:"12px",md:'18px'}}
+              h={{base:"12px",md:'18px'}}
             />
             Join Whitelist
           </Button>
