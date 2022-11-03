@@ -95,7 +95,7 @@ interface LinkItemProps extends FlexProps {
 }
 
 const NavLink = ({ children, ...rest }: LinkItemProps) => (
-  <Text textStyle={'headerText'}>
+  <Text textStyle={'headerText'} fontWeight={400}>
     <Link href={rest.link}>{children}</Link>
   </Text>
 )

@@ -1,7 +1,7 @@
 import { extendTheme,theme as base,type ThemeConfig} from '@chakra-ui/react'
 import { createBreakpoints,mode } from '@chakra-ui/theme-tools'
 // import { StyleFunctionProps } from '@chakra-ui/styled-system'
-
+import "@fontsource/poppins"
 export const theme = extendTheme({ breakpoints: createBreakpoints({
     sm: '572px',
     md: '768px',
