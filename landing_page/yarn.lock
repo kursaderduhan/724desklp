@@ -859,6 +859,11 @@
   resolved "https://registry.yarnpkg.com/@fontsource/poppins/-/poppins-4.5.10.tgz#44dbfeacb5d89efca5ad7ad6cc941b2ac1ee424b"
   integrity sha512-oYZVHsnlwV3VWM1SE/m6SUxVh0QLk5+2wB+lBiXcI7N/0KVQWmV9YykaPqfJHBLvmdya+MAOnv+BQHeLU1vOOw==
 
+"@fontsource/readex-pro@^4.5.11":
+  version "4.5.11"
+  resolved "https://registry.yarnpkg.com/@fontsource/readex-pro/-/readex-pro-4.5.11.tgz#fadf82aa10b09abbda9aeff863b3e7502ea5475c"
+  integrity sha512-vfM6xW/NbAtSGPLzL931smgprvnOPDexHbLbeIOnF1oKCaLDp8RhViDtN/6ehz8e+OnJtFnRzcIsjXFuJDbIFg==
+
 "@humanwhocodes/config-array@^0.10.4":
   version "0.10.4"
   resolved "https://registry.npmjs.org/@humanwhocodes/config-array/-/config-array-0.10.4.tgz"
