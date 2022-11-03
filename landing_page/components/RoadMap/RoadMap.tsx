@@ -11,12 +11,12 @@ import {
   Container
 } from '@chakra-ui/react'
 import React, { memo } from 'react'
-
+import "@fontsource/readex-pro"
 export const RoadMap = () => {
   return (
     <Flex
       w={'full'}
-      h={{ md: 1200, xl: 1400 }}
+      h={"1392px"}
       bgImage={'/bg.png'}
       bgPos={'center'}
       bgSize={'cover'}
@@ -26,17 +26,19 @@ export const RoadMap = () => {
           h={'full'}
           color={'white'}
           w={'full'}
-          py={50}
-          alignContent={'center'}
+          pt={"72px"}
+          alignContent={'center'} pb={"120px"}
         >
-          <Text textStyle={'roadMapHead'} alignSelf={'center'}>
+          <Text textStyle={'roadMapHead'} alignSelf={'center'} fontWeight={400} lineHeight={"58px"} fontFamily={"Readex Pro"}>
             Proje İlerleme Süreci
           </Text>
           <Text
             alignSelf={'center'}
-            textStyle={'normal'}
+            fontSize={"14px"}
             color={'#F6F6F6'}
             fontWeight={400}
+            letterSpacing={"0.5px"}
+            lineHeight={"21px"} mt={"4px"}
           >
             Proje çalışmaları, hazırlık süreçleri ve yayınlama süresi hakkında
             bilgiler
@@ -45,24 +47,23 @@ export const RoadMap = () => {
             w={'full'}
             flexDirection={'column'}
             alignSelf={'center'}
-            pt={25}
+            pt={"29px"}
           >
             <Image
               src={'/Stick.png'}
               alt={'stick'}
               pos={'absolute'}
               w={4}
-              h={{ base: 750, md: 800, lg: 900, xl: 1100 }}
-              pt={25}
+              h={"1063px"}
             />
             <VStack
               zIndex={1}
               w={820}
-              gap={{ base: 25, md: 50, lg: 50, xl: 75 }}
+              gap={10}
             >
               <Flex
                 alignSelf={'flex-end'}
-                pr={10}
+                pr={12}
                 flexDirection={'row'}
                 gap={3}
                 alignItems={'start'}
@@ -85,28 +86,28 @@ export const RoadMap = () => {
                     w={'60px'}
                     h={'60px'}
                   />
-                  <VStack color={'white'} textStyle={'roadHead'}>
-                    <Flex alignSelf={'flex-start'} gap={2}>
-                      <Text alignSelf={'flex-start'} fontWeight={500}>
+                  <VStack color={'white'} textStyle={'roadHead'} pt={3}>
+                    <Flex alignSelf={'flex-start'} gap={2} textStyle={'roadHead'}>
+                      <Text alignSelf={'flex-start'} lineHeight={"28px"} letterSpacing={"0.15px"} fontStyle={"normal"}>
                         1.Aşama
                       </Text>
                       <Text
-                        fontSize={'sm'}
+                        fontSize={'12px'}
                         fontWeight={400}
-                        alignSelf={'center'}
+                        alignSelf={'center'} opacity={"0.8"}
                       >
                         06/2021
                       </Text>
                     </Flex>
-                    <Text fontWeight={500}>
+                    <Text lineHeight={"28px"} letterSpacing={"0.15px"} fontStyle={"normal"}>
                       Pazar Analizi ve Proje Üretim <br /> Aşaması
                     </Text>
                     <UnorderedList
                       alignSelf={'flex-start'}
                       pl={5}
-                      color={'lightgray'}
-                      textStyle={'normal'}
-                      fontWeight={500}
+                      color={'white'}
+                      textStyle={'normal'} fontStyle={"normal"}
+                      fontWeight={500} letterSpacing={"0.15px"} lineHeight={"21px"} spacing={2}
                     >
                       <ListItem>Pazar Araştırması</ListItem>
                       <ListItem>Proje İçerik Aşaması</ListItem>
@@ -115,9 +116,8 @@ export const RoadMap = () => {
                   </VStack>
                 </Flex>
               </Flex>
-
               {/*q2*/}
-              <Box alignSelf={'flex-start'} pl={75}>
+              <Flex alignSelf={'flex-start'} pl={75}>
                 <HStack alignSelf={'flex-start'}>
                   <VStack color={'white'}>
                     <HStack
@@ -140,7 +140,7 @@ export const RoadMap = () => {
                         <Text color={'blue'} fontWeight={500}>
                           2.Aşama
                         </Text>
-                        <Text color={'blue'} fontSize={'xs'} pt='1'>
+                        <Text color={'blue'} fontSize={'12px'} pt='1'>
                           08.2021
                         </Text>
                       </Flex>
@@ -155,9 +155,9 @@ export const RoadMap = () => {
                       Arayüz Tasarımı Aşaması
                     </Text>
                     <UnorderedList
-                      color={'lightgray'}
+                      color={'white'}
                       textStyle={'normal'}
-                      fontWeight={500}
+                      fontWeight={500} spacing={2}
                     >
                       <ListItem>Arayüz Tasarımının Araştırması</ListItem>
                       <ListItem>Wireframe Oluşturma</ListItem>
@@ -166,7 +166,7 @@ export const RoadMap = () => {
                     </UnorderedList>
                   </VStack>
                 </HStack>
-              </Box>
+              </Flex>
               {/*Q3*/}
               <Flex
                 alignSelf={'flex-end'}
@@ -190,16 +190,16 @@ export const RoadMap = () => {
                     w={'60px'}
                     h={'60px'}
                   />
-                  <VStack color={'white'} textStyle={'roadHead'}>
+                  <VStack color={'white'} textStyle={'roadHead'} pt={3}>
                     <HStack alignSelf={'flex-start'}>
                       <Text alignSelf={'flex-start'}>3.Aşama</Text>
-                      <Text fontSize={'sm'}>02/2022</Text>
+                      <Text fontSize={'12px'} opacity={0.8}>02/2022</Text>
                     </HStack>
                     <Text alignSelf={'flex-start'}>Kodlama Aşaması</Text>
                     <UnorderedList
                       pl={'5'}
-                      color={'lightgray'}
-                      textStyle={'normal'}
+                      color={'white'}
+                      textStyle={'normal'} spacing={2}
                     >
                       <ListItem>Tanıtım Web Sitelerinin Kodlanması</ListItem>
                       <ListItem>
@@ -223,7 +223,6 @@ export const RoadMap = () => {
                       w={'60px'}
                       h={'60px'}
                     />
-
                     <Stack
                       alignSelf={'flex-start'}
                       textStyle={'roadHead'}
@@ -236,7 +235,7 @@ export const RoadMap = () => {
                         <Text fontWeight={500} fontSize={'19px'}>
                           4.Aşama
                         </Text>
-                        <Text fontSize={'xs'} alignSelf={'center'}>
+                        <Text fontSize={'12px'} alignSelf={'center'} opacity={"0.8"}>
                           07.2022
                         </Text>
                       </HStack>
@@ -248,9 +247,9 @@ export const RoadMap = () => {
                         Analiz ve Test Aşaması
                       </Text>
                       <UnorderedList
-                        color={'lightgray'}
+                        color={'white'}
                         textStyle={'normal'}
-                        pl={5}
+                        pl={5} spacing={2}
                       >
                         <ListItem>Arayüz Tasarımının Araştırılması</ListItem>
                         <ListItem>Wireframe Oluşturma</ListItem>
@@ -294,20 +293,20 @@ export const RoadMap = () => {
                     h={'60px'}
                     alignSelf={'flex-start'}
                   />
-                  <VStack color={'white'} textStyle={'roadHead'}>
+                  <VStack color={'white'} textStyle={'roadHead'} pt={3}>
                     <HStack alignSelf={'flex-start'}>
                       <Text alignSelf={'flex-start'} fontWeight={500}>
                         5.Aşama
                       </Text>
-                      <Text fontSize={'sm'}>01/2023</Text>
+                      <Text fontSize={'12px'} opacity={"0.8"}>01/2023</Text>
                     </HStack>
                     <Text alignSelf={'flex-start'} fontWeight={500}>
                       Yayınlama Aşaması
                     </Text>
                     <UnorderedList
                       pl={'5'}
-                      color={'lightgray'}
-                      textStyle={'normal'}
+                      color={'white'}
+                      textStyle={'normal'} spacing={2}
                     >
                       <ListItem>Tanıtım Web Sitelerinin Kodlanması</ListItem>
                       <ListItem>

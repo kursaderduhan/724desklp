@@ -42,7 +42,7 @@ export const theme = extendTheme({ breakpoints: createBreakpoints({
       fontSize: {base:"xs",md:"sm",lg:"sm",xl:"sm"}  
     },
     normal: {
-      fontSize: { base: 'xs', md: 'sm', lg: 'sm', xl: "sm" }
+      fontSize:"14px"
     },
     tokenomics: {
       fontSize: "10px",
@@ -51,13 +51,16 @@ export const theme = extendTheme({ breakpoints: createBreakpoints({
       letterSpacing:"0.25px"
     },
     roadMapHead: {
-      fontSize: { base: 'xs', md: 'sm', lg: 'sm', xl: "5xl" }
+      fontSize: "46px",
+      color: "white",
     },
     roadHead: {
-      fontSize:{ base: 'sm', md: 'md', lg: 'lg', xl: "xl" }
+      fontSize: "19px",
+      color: "white",
+      fontWeight: 500,
     },
     headText: {
-      fontSize: {base: "2xl", md: "3xl", lg: "4xl", xl:"4xl"}
+      fontSize: { base: "2xl", md: "3xl", lg: "4xl", xl: "4xl" }
     },
     featuresHead: {
       fontSize: { base: 'sm', md: 'md', lg: 'lg', xl: "2xl" }
