@@ -63,10 +63,21 @@ export const theme = extendTheme({ breakpoints: createBreakpoints({
       fontSize: { base: "2xl", md: "3xl", lg: "4xl", xl: "4xl" }
     },
     featuresHead: {
-      fontSize: { base: 'sm', md: 'md', lg: 'lg', xl: "2xl" }
+      fontSize: "23px",
+      fontStyle: "normal",
+      fontWeight: 500,
+      lineHeight: "34px",
+      color: "black"
+    },
+    featuresText: {
+      lineHeight: "21px",
+      fontWeight: 400,
+      fontStyle: "normal",
+      letterSpacing: "0.5px",
+      fontSize: "14px"
     },
     footerText: {
-      fontSize: {base: "xs", md: "xs", lg: "xs", xl: "xs"}
+      fontSize: "14px",
     }
   },    
   }
