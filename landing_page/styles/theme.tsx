@@ -93,6 +93,20 @@ export const theme = extendTheme({ breakpoints: createBreakpoints({
       lineHeight: "21px",
       fontStyle: "normal",
       color: "#F6F6F6"
+    },
+    resultServiceHead: {
+      fontSize: "38px",
+      fontStyle: "normal",
+      lineHeight: "48px",
+      fontWeight: 400
+    },
+    resultServiceText: {
+      fontSize: "14px",
+      fontStyle: "normal",
+      letterSpacing: "0.5px",
+      lineHeight: "21px",
+      fontWeight: 400,
+      color: "#666666"
     }
 
   },    
