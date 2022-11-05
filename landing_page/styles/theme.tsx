@@ -78,7 +78,23 @@ export const theme = extendTheme({ breakpoints: createBreakpoints({
     },
     footerText: {
       fontSize: "14px",
+    },
+    headerStyle: {
+      fontSize: "46px",
+      fontWeight: 400,
+      lineHeight: "58px",
+      fontStyle: "normal",
+      fontFamily: "Readex Pro"
+    },
+    deskTokenText: {
+      fontSize: "14px",
+      fontWeight: 500,
+      letterSpacing: "0.5px",
+      lineHeight: "21px",
+      fontStyle: "normal",
+      color: "#F6F6F6"
     }
+
   },    
   }
 )
