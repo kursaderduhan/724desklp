@@ -12,17 +12,17 @@ import {
   TableCaption,
   TableContainer,Container
 } from '@chakra-ui/react'
-
+import "@fontsource/readex-pro"
 export const TokenCalendar = () => {
   return (
-    <VStack bgImage={'/CalendarBg.png'} bgPos={'center'} bgSize={'cover'} py={50} zIndex={2}>
+    <VStack bgGradient={'linear-gradient(266.69deg, #2573BA 0%, #1A559C 97.2%, #041860 168.14%)'} pt={"42px"} pb={"61px"} zIndex={2}>
       <Container maxW={"1200px"} centerContent>
-      <Text fontWeight={'bold'} fontSize={'4xl'} color={"white"} alignSelf={"flex-start"}>
+      <Text textStyle={"resultServiceHead"} color={"white"} alignSelf={"flex-start"} fontFamily={"Readex Pro"}>
         Serbest Kalma Çizelgesi
       </Text>
-      <Text color={"#F6F6F6"} alignSelf={"flex-start"} fontSize={"headerText"}>Projemizin tokeni olan Desk Token nedir? </Text>
-      <TableContainer color="white" w={"full"} >
-        <Table variant='striped' colorScheme='whiteAlpha' color={"white"} fontSize={"sm"}>
+      <Text color={"#F6F6F6"} alignSelf={"flex-start"} fontSize={"resultServiceText"} pt={"4px"}>Projemizin tokeni olan Desk Token nedir? </Text>
+      <TableContainer color="white" w={"full"} pt={"64px"}>
+        <Table variant='striped' colorScheme='whiteAlpha' color={"#F6F6F6"} fontSize={"15px"} fontWeight={500} fontStyle={"normal"} lineHeight={"22px"} letterSpacing={"0.15px"}>
           <Thead>
             <Tr>
               <Th color={"white"}></Th>
@@ -34,8 +34,8 @@ export const TokenCalendar = () => {
             </Tr>
           </Thead>
           <Tbody>
-            <Tr>
-              <Td>Seed</Td>
+            <Tr color={"white"} fontSize={"14px"} fontWeight={400} fontStyle={"normal"} lineHeight={"21px"} letterSpacing={"0.5px"}>
+              <Td color={"#F6F6F6"} fontSize={"15px"} fontWeight={500} fontStyle={"normal"} lineHeight={"22px"} letterSpacing={"0.15px"}>Seed</Td>
               <Td>3.5%</Td>
               <Td>70.000</Td>
               <Td>$0.005</Td>
@@ -49,8 +49,8 @@ export const TokenCalendar = () => {
                 to 30, 3% on 31st month
               </Td>
             </Tr>
-            <Tr>
-              <Td>Strategic</Td>
+            <Tr color={"white"} fontSize={"14px"} fontWeight={400} fontStyle={"normal"} lineHeight={"21px"} letterSpacing={"0.5px"}>
+              <Td color={"#F6F6F6"} fontSize={"15px"} fontWeight={500} fontStyle={"normal"} lineHeight={"22px"} letterSpacing={"0.15px"}>Strategic</Td>
               <Td>8%</Td>
               <Td>20.000.000</Td>
               <Td>$0.014</Td>
@@ -65,8 +65,8 @@ export const TokenCalendar = () => {
                 25,3% on 26th month
               </Td>
             </Tr>
-            <Tr>
-              <Td>Private</Td>
+            <Tr color={"white"} fontSize={"14px"} fontWeight={400} fontStyle={"normal"} lineHeight={"21px"} letterSpacing={"0.5px"}>
+              <Td color={"#F6F6F6"} fontSize={"15px"} fontWeight={500} fontStyle={"normal"} lineHeight={"22px"} letterSpacing={"0.15px"}>Private</Td>
               <Td>7%</Td>
               <Td>10.000.000</Td>
               <Td>$0.017</Td>
@@ -81,8 +81,8 @@ export const TokenCalendar = () => {
                 20,2.5% on 21th month
               </Td>
             </Tr>
-            <Tr>
-              <Td>Community Round (public)</Td>
+            <Tr color={"white"} fontSize={"14px"} fontWeight={400} fontStyle={"normal"} lineHeight={"21px"} letterSpacing={"0.5px"}>
+              <Td color={"#F6F6F6"} fontSize={"15px"} fontWeight={500} fontStyle={"normal"} lineHeight={"22px"} letterSpacing={"0.15px"}>Community Round (public)</Td>
               <Td>2.5%</Td>
               <Td>40.000.000</Td>
               <Td>$0.018</Td>
@@ -96,8 +96,8 @@ export const TokenCalendar = () => {
                 vesting
               </Td>
             </Tr>
-            <Tr>
-              <Td>P2E, Staking</Td>
+            <Tr color={"white"} fontSize={"14px"} fontWeight={400} fontStyle={"normal"} lineHeight={"21px"} letterSpacing={"0.5px"}>
+              <Td color={"#F6F6F6"} fontSize={"15px"} fontWeight={500} fontStyle={"normal"} lineHeight={"22px"} letterSpacing={"0.15px"}>P2E, Staking</Td>
               <Td>31%</Td>
               <Td>20.000.000</Td>
               <Td>-</Td>
@@ -110,7 +110,7 @@ export const TokenCalendar = () => {
                 50% at TGE, 50% at <br /> second month
               </Td>
             </Tr>
-            <Tr>
+            <Tr color={"white"} fontSize={"14px"} fontWeight={400} fontStyle={"normal"} lineHeight={"21px"} letterSpacing={"0.5px"}>
               <Td color={"transparent"}></Td>
               <Td color={"orange"}>Total tokens:</Td>
               <Td color={"orange"}>100.000.000</Td>
