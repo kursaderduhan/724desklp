@@ -107,6 +107,14 @@ export const theme = extendTheme({ breakpoints: createBreakpoints({
       lineHeight: "21px",
       fontWeight: 400,
       color: "#666666"
+    },
+    investorText: {
+      fontSize: "19px",
+      fontStyle: "normal",
+      lineHeight: "28px",
+      fontWeight: 500,
+      letterSpacing: "0.15px",
+      color:"#F6F6F6"
     }
 
   },    

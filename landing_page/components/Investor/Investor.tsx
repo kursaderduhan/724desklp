@@ -14,6 +14,7 @@ import {
   Flex,
   Container
 } from '@chakra-ui/react'
+import "@fontsource/readex-pro"
 export const Investor = () => {
   return (
     <VStack
@@ -21,54 +22,45 @@ export const Investor = () => {
       color={'white'}
       w={'full'}
     >
-      <Container maxW={'1200px'} centerContent  py={'100'}>
-        <VStack
-          alignItems={'flex-start'}
-          textStyle={'normal'}
-          color={'lightgray'}
-        >
-          <VStack alignItems={'flex-start'} >
-            <Text fontWeight={'bold'} textStyle={'headText'} color={'white'}>
-              Yatırımcılar İçin
+      <Container maxW={'1200px'} py={'72px'}>
+          <Flex flexDirection={"column"} alignItems={'flex-start'} alignSelf={"flex-start"} w={"100%"} justifyContent={"flex-start"} maxW={"792px"} >
+            <Text textStyle={'resultServiceHead'} fontFamily={"Readex Pro"} color={'white'}>
+              <span style={{color:"#F27C00",fontFamily:"poppins"}}>I</span>Yatırımcılar İçin
             </Text>
-            <Text>
+            <Text textStyle={"resultServiceText"} color={"#EAEAEA"}>
               Projemiz tohum yatırım toplama sürecindedir. Bu süreçteki yatırım
-              miktarları ve değerleri birebir <br /> toplantılarla
+              miktarları ve değerleri birebir toplantılarla
               belirlenecektir.
             </Text>
-            <Text>
+            <Text textStyle={"resultServiceText"} color={"#EAEAEA"} pt={5}>
               Yatırımcılara Platform tokenimiz olan Desk token verilecek olup
-              belirlenen takvimler kapsamında serbest <br /> bırakılacaktır.
+              belirlenen takvimler kapsamında serbest bırakılacaktır.
             </Text>
-          </VStack>
-
+          </Flex>
           <HStack
-            w={'full'}
+            w={'100%'}
             justifyContent={'space-between'}
             alignItems={'center'}
-            flexDirection={'row'} 
+            flexDirection={'row'} mt={"101px"}
           >
+            <Flex pos={"relative"} w={"100%"} h={"100%"} bottom={200} right={55}>
             <Image
               src={'/iPad-Pro.png'}
               alt={'ipad'}
-              w={'588px'}
-              h={'348px'}
-              alignSelf={'flex-start'}
+              alignSelf={'flex-start'} pos={"absolute"} 
             />
+            </Flex>
             <VStack
-              alignItems={'flex-start'}
-              color={'lightgray'}
-              textStyle={'normal'}
+              alignItems={'flex-start'} pt={50} w={"100%"}
             >
-              <Text fontWeight={'bold'} textStyle={'roadHead'} color={'white'}>
+              <Text textStyle={"investorText"}>
                 Neden 724 Desk?
               </Text>
-              <UnorderedList pl={5}>
+              <UnorderedList spacing={"5px"} maxW={"588px"} fontSize={"14px"} lineHeight={"21px"} fontWeight={500} color={"#F6F6F6"} fontStyle={"normal"} letterSpacing={"0.15px"}>
                 <ListItem>
-                  Erken dönem yatırımcılarımız, projemiz tokenine daha uygun
-                  maliyetlerle sahip olmuş olacaklar.
+                  Erken dönem yatırımcılarımız, projemiz tokenine daha uygun maliyetlerle sahip olmuş olacaklar.
                 </ListItem>
-                <ListItem>
+                <ListItem> 
                   Projemiz gelirlerinden net pay elde edecekler.
                 </ListItem>
                 <ListItem>
@@ -81,15 +73,14 @@ export const Investor = () => {
               </UnorderedList>
             </VStack>
           </HStack>
-        </VStack>
+       <Flex w={"100%"} justifyContent={"center"} pt={"136px"}>
         <Flex
-          justifyContent={'space-evenly'}
-          py={50}
+          justifyContent={'center'}
+          pt={"20px"} alignSelf={"center"}
           bg={'#164D8F'}
           overflow={'hidden'}
-          w={'996px'}
-          h={'600px'}
-          px={50} 
+          w={'996px'} boxShadow={"md"}
+          h={'654px'} borderRadius={"16px"}
         >
           <VStack
             alignItems={'flex-start'}
@@ -97,10 +88,10 @@ export const Investor = () => {
             w={'450px'}
             gap={5}
           >
-            <Text fontWeight={'bold'} textStyle={'roadHead'}>
+            <Text textStyle={'investorText'} color={"#FFFFFF"}>
               İletişim Bilgilerimiz
             </Text>
-            <Text color={'#D4D4D4'}>
+              <Text color={'#D4D4D4'} textStyle={"resultServiceText"}>
               Bizimle İletişime Geçebileceğiniz Adresler.
             </Text>
             <HStack>
@@ -111,10 +102,10 @@ export const Investor = () => {
                 h={'32px'}
               />
               <VStack>
-                <Text alignSelf={'flex-start'} textStyle={'headerText'}>
+                <Text alignSelf={'flex-start'} textStyle={'resultServiceText'} color={"#EAEAEA"}>
                   Telefon
                 </Text>
-                <Text fontSize={'15px'}>+1 530 535 8035</Text>
+                <Text fontSize={'15px'} textStyle={'resultServiceText'} color={"white"} lineHeight={"22px"}>+1 530 535 8035</Text>
               </VStack>
             </HStack>
             <HStack>
@@ -125,47 +116,47 @@ export const Investor = () => {
                 h={'32px'}
               />
               <VStack>
-                <Text alignSelf={'flex-start'} textStyle={'headerText'}>
+                <Text alignSelf={'flex-start'} textStyle={'resultServiceText'} color={"#EAEAEA"}>
                   E-Posta
                 </Text>
-                <Text fontSize={'15px'}>invesment@724desk.com</Text>
+                <Text fontSize={'15px'} textStyle={'resultServiceText'} color={"white"} lineHeight={"22px"}>invesment@724desk.com</Text>
               </VStack>
             </HStack>
           </VStack>
           <VStack
             alignItems={'flex-start'}
             textStyle={'normal'}
-            gap={5}
             w={'450px'}
           >
-            <Text fontWeight={'bold'} textStyle={'roadHead'}>
+            <Text textStyle={'investorText'} color={"#FFFFFF"}>
               Bize Ulaşın
             </Text>
-            <Text textStyle={'headerText'} color={'#D4D4D4'}>
+            <Text textStyle={'resultServiceText'} color={'#D4D4D4'}>
               Lütfen İletişim Bilgilerinizi Yazınız.
             </Text>
-            <Box w={'full'}>
-              <FormLabel htmlFor='username'>
-                <Text textStyle={'headerText'}>Ad Soyad</Text>
+            <Box w={'full'} pt={"32px"}>
+              <FormLabel htmlFor='username' >
+                <Text textStyle={"resultServiceText"} color={"#F6F6F6"}>Ad Soyad</Text>
               </FormLabel>
-              <Input placeholder='Ad Soyad' type={'text'} />
+              <Input placeholder='Ad Soyad' type={'text'} _placeholder={{color:"white",textStyle:"resultServiceText"}}  bg={"#386CAC"}/>
             </Box>
-            <Box alignItems={'flex-start'} w={'full'}>
+            <Box alignItems={'flex-start'} w={'full'} pt={"24px"}>
               <FormLabel htmlFor='e-posta'>
-                <Text textStyle={'headerText'}>E-Posta</Text>
+                <Text textStyle={"resultServiceText"} color={"#F6F6F6"}>E-Posta</Text>
               </FormLabel>
-              <Input placeholder='invesment@724desk.com' type={'email'} />
+              <Input placeholder='invesment@724desk.com' type={'email'}  bg={"#386CAC"} _placeholder={{color:"white",textStyle:"resultServiceText"}}/>
             </Box>
-            <Box w={'full'}>
+            <Box w={'full'} py={"24px"}>
               <FormLabel htmlFor=''>
-                <Text textStyle={'headerText'}>Açıklama</Text>
+                <Text textStyle={"resultServiceText"} color={"#F6F6F6"}>Açıklama</Text>
               </FormLabel>
               <Textarea
-                placeholder='Merhaba, '
-                size={'lg'}
+                  placeholder='Merhaba, 
+                  Projenize yatırım yapmak istiyorum lütfen benimle iletişime geçebilir misiniz?'
+                size={'lg'} bg={"#386CAC"}
                 minW={'max-content'}
                 resize={'none'}
-                bg={'transparent'}
+                h={"195px"} _placeholder={{color:"white",textStyle:"resultServiceText"}}
                 fontSize={{ base: 'sm', md: 'md' }}
                 //   onKeyPress={() => setButton()}
                 //   onChange={e => setContent(e.target.value)}
@@ -177,13 +168,14 @@ export const Investor = () => {
               w={'full'}
               color={'white'}
               _hover={{ opacity: 0.8 }}
-              gap={2}
+              gap={2} h={"54px"}
             >
-              <Text textStyle={'headerText'}>Gönder</Text>
+              <Text fontSize={"13px"} lineHeight={"20px"} fontWeight={500} letterSpacing={"0.5px"} fontStyle={"normal"} color={"white"}>Gönder</Text>
               <Image src={'/send.png'} alt={'send'} w={'19px'} h={'19px'} />
             </Button>
           </VStack>
-        </Flex>
+          </Flex>
+          </Flex>
       </Container>
     </VStack>
   )
