@@ -23,11 +23,10 @@ export const Features = () => {
         <Image
           src={'/Ellipse.png'}
           alt={'orange'}
-          w={900}
-          h={900}
+          w={800}
+          h={1000}
         />
       </Box>
-
       <Container maxW={'1200px'} centerContent>
         <Text color={'#F27C00'} fontSize={'46px'} fontWeight={400} lineHeight={"58px"} fontStyle={"normal"} fontFamily={"Readex Pro"}>
           Gelişmiş Kullanıcı ve Uzman Yönetim Paneli
@@ -142,7 +141,7 @@ export const Features = () => {
               alt={'takvim'}
               w={{ base: 250, md: 350, lg: 450, xl: 550 }}
             />
-            <HStack alignItems={'flex-start'}  maxW={"561px"} pr={35}>
+            <HStack alignItems={'flex-start'}  maxW={"561px"} w={"100%"}>
               <Circle
                 size={{ base: '30px', md: '40px', xl: '54px' }}
                 bg={'white'}
@@ -159,7 +158,7 @@ export const Features = () => {
               <VStack
                 alignSelf={'flex-start'}
                 alignItems={'flex-start'}
-                textStyle={'normal'}
+                textStyle={'normal'} w={"100%"} pr={10}
               >
                 <Text textStyle={'featuresHead'}>
                   Üst düzey ajanda kontrolü ve denetim

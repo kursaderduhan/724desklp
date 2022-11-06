@@ -22,8 +22,6 @@ export const Home = () => {
       bgGradient={
         'radial-gradient(86.81% 154.32% at 11.04% 62.82%, #2573BA 0%, #041860 100%)'
       }
-      bgPos={'center'}
-      bgSize={'cover'}
       cursor={'default'}
     >
       <Container maxW={'1200px'} centerContent>
@@ -76,13 +74,14 @@ export const Home = () => {
               <Image src={'36dp.png'} w={'36px'} h={'36px'} alt={'play'} />
             </HStack>
           </VStack>
+          <Flex w={"100%"} mb={200} h={"full"}>
           <Image
             src={'/1.gif'}
             w={{ base: 200, md: 549, lg: "549px", xl: "549px" }}
             h={{ base: 200, md: 549, lg: "549px", xl: "549px" }}
-            alt={'deskIcon'}
-          />
-          
+            alt={'deskIcon'} pos={"absolute"} top={20}
+            />
+            </Flex>
         </HStack>
         <Box
           w={'100%'}
