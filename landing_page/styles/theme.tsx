@@ -78,6 +78,19 @@ export const theme = extendTheme({ breakpoints: createBreakpoints({
     },
     footerText: {
       fontSize: "14px",
+      fontWeight: 400,
+      fontStyle: "normal",
+      limeHeight: "21px",
+      letterSpacing: "0.5px",
+      color:"white"
+    },
+    footerTextList: {
+      fontSize: "12px",
+      color: "white",
+      lineHeight: "150%",
+      fontWeight: 400,
+      fontStyle: "normal",
+      letterSpacing: "0.25px"
     },
     headerStyle: {
       fontSize: "46px",
